@@ -1756,6 +1756,23 @@ pre .javascript .function {
   z-index: 1009;
   width: 100%;
 }
+.progress-bar-container .scroll-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1007;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  visibility: hidden;
+  transition-delay: 0s, 0s, 0s, 0s, 0s;
+  transition-timing-function: ease, ease, ease, ease, linear;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.1s;
+  transition-property: color, background, box-shadow, border-color, width;
+}
+.progress-bar-container .scroll-progress-bar.hide {
+  display: none !important;
+}
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -2451,18 +2468,7 @@ pre .javascript .function {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url("/images/bg.svg") center center/cover no-repeat;
-  background-position-y: var(--header-height);
-}
-@media (max-width: 800px) {
-  .first-screen-container {
-    background-position-y: calc(var(--header-height) * 0.9);
-  }
-}
-@media (max-width: 500px) {
-  .first-screen-container {
-    background-position-y: calc(var(--header-height) * 0.8);
-  }
+  background: url("/images/bg.jpg") center center/cover no-repeat;
 }
 .first-screen-container .first-screen-content {
   display: flex;

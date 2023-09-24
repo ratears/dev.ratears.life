@@ -16,11 +16,14 @@ cnpm install
 cnpm install hexo-deployer-git --save
 cnpm install hexo-server --save
 
-cd themes/keep
+cd themes/keep/
+cnpm install
 cnpm install
 
-cd ../
+cd ../../
 hexo clean && hexo g && hexo d && hexo s
+
+cnpm install hexo-theme-keep@3.6.1 --save
 
 
 ```

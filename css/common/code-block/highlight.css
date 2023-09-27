@@ -15,6 +15,7 @@
   --highlight-purple: #8959a8;
   --highlight-gutter-color: #585865;
   --highlight-gutter-bg-color: #f2f2f2;
+  --mac-toolbar-background-color: #21252b;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -34,6 +35,7 @@
     --highlight-purple: #8959a8;
     --highlight-gutter-color: #585865;
     --highlight-gutter-bg-color: #f2f2f2;
+    --mac-toolbar-background-color: #21252b;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -54,6 +56,7 @@
     --highlight-purple: #b294bb;
     --highlight-gutter-color: #b1bdc8;
     --highlight-gutter-bg-color: #1f2329;
+    --mac-toolbar-background-color: #1f2021;
   }
 }
 .light-mode {
@@ -73,6 +76,7 @@
   --highlight-purple: #8959a8;
   --highlight-gutter-color: #585865;
   --highlight-gutter-bg-color: #f2f2f2;
+  --mac-toolbar-background-color: #21252b;
 }
 .dark-mode {
   --toolbar-foreground: #adbac5;
@@ -91,6 +95,7 @@
   --highlight-purple: #b294bb;
   --highlight-gutter-color: #b1bdc8;
   --highlight-gutter-bg-color: #1f2329;
+  --mac-toolbar-background-color: #1f2021;
 }
 .code-block,
 pre,
@@ -144,7 +149,8 @@ pre code {
   border: none;
 }
 .highlight figcaption {
-  margin-bottom: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
   color: var(--highlight-foreground);
   font-size: 1rem;
   line-height: 1rem;
@@ -152,6 +158,7 @@ pre code {
 .highlight figcaption a {
   float: right;
   color: var(--highlight-foreground);
+  font-size: 0.9rem;
 }
 .highlight figcaption a:hover {
   border-bottom-color: var(--highlight-foreground);

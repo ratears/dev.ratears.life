@@ -164,6 +164,38 @@
     transform: rotate(1turn);
   }
 }
+@-moz-keyframes blink-caret {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink-caret {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 :root {
   --primary-color: #06c;
   --primary-color-light-1: #0075eb;
@@ -196,10 +228,25 @@
   --header-transparent-background-1: rgba(255,255,255,0.28);
   --header-transparent-background-2: rgba(255,255,255,0.4);
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-  --article-aging-tips-color: #b78d0f;
-  --article-aging-tips-background-color: rgba(183,141,15,0.1);
-  --article-aging-tips-border-color: rgba(183,141,15,0.6);
   --post-h-bottom-border-color: rgba(80,80,92,0.15);
+  --article-aging-tips-color: $article-aging-tips-color;
+  --article-aging-tips-background-color: $article-aging-tips-background-color;
+  --article-aging-tips-border-color: $article-aging-tips-border-color;
+  --note-default-color: rgba(117,117,122,0.8);
+  --note-default-background-color: rgba(117,117,122,0.1);
+  --note-default-border-color: rgba(117,117,122,0.6);
+  --note-primary-color: #0458ab;
+  --note-primary-background-color: rgba(4,88,171,0.1);
+  --note-primary-border-color: rgba(4,88,171,0.6);
+  --note-warning-color: #b78d0f;
+  --note-warning-background-color: rgba(183,141,15,0.1);
+  --note-warning-border-color: rgba(183,141,15,0.6);
+  --note-success-color: #10b981;
+  --note-success-background-color: rgba(16,185,129,0.1);
+  --note-success-border-color: rgba(16,185,129,0.6);
+  --note-danger-color: #f43f5e;
+  --note-danger-background-color: rgba(244,63,94,0.1);
+  --note-danger-border-color: rgba(244,63,94,0.6);
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -234,10 +281,25 @@
     --header-transparent-background-1: rgba(255,255,255,0.28);
     --header-transparent-background-2: rgba(255,255,255,0.4);
     --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-    --article-aging-tips-color: #b78d0f;
-    --article-aging-tips-background-color: rgba(183,141,15,0.1);
-    --article-aging-tips-border-color: rgba(183,141,15,0.6);
     --post-h-bottom-border-color: rgba(80,80,92,0.15);
+    --article-aging-tips-color: $article-aging-tips-color;
+    --article-aging-tips-background-color: $article-aging-tips-background-color;
+    --article-aging-tips-border-color: $article-aging-tips-border-color;
+    --note-default-color: rgba(117,117,122,0.8);
+    --note-default-background-color: rgba(117,117,122,0.1);
+    --note-default-border-color: rgba(117,117,122,0.6);
+    --note-primary-color: #0458ab;
+    --note-primary-background-color: rgba(4,88,171,0.1);
+    --note-primary-border-color: rgba(4,88,171,0.6);
+    --note-warning-color: #b78d0f;
+    --note-warning-background-color: rgba(183,141,15,0.1);
+    --note-warning-border-color: rgba(183,141,15,0.6);
+    --note-success-color: #10b981;
+    --note-success-background-color: rgba(16,185,129,0.1);
+    --note-success-border-color: rgba(16,185,129,0.6);
+    --note-danger-color: #f43f5e;
+    --note-danger-background-color: rgba(244,63,94,0.1);
+    --note-danger-border-color: rgba(244,63,94,0.6);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -273,10 +335,25 @@
     --header-transparent-background-1: rgba(34,39,46,0.28);
     --header-transparent-background-2: rgba(34,39,46,0.4);
     --pjax-progress-bar-color: linear-gradient(45deg, #ea404a, #ea722f, #e9a71f, #67e559, #18ecec, #1b85f1, #ee1dee);
-    --article-aging-tips-color: #ecc34d;
-    --article-aging-tips-background-color: rgba(236,195,77,0.1);
-    --article-aging-tips-border-color: rgba(236,195,77,0.6);
     --post-h-bottom-border-color: rgba(173,186,197,0.15);
+    --article-aging-tips-color: $dark-article-aging-tips-color;
+    --article-aging-tips-background-color: $dark-article-aging-tips-background-color;
+    --article-aging-tips-border-color: $dark-article-aging-tips-border-color;
+    --note-default-color: #9999a2;
+    --note-default-background-color: rgba(153,153,162,0.1);
+    --note-default-border-color: rgba(153,153,162,0.5);
+    --note-primary-color: #268bef;
+    --note-primary-background-color: rgba(38,139,239,0.1);
+    --note-primary-border-color: rgba(38,139,239,0.6);
+    --note-warning-color: #ecc34d;
+    --note-warning-background-color: rgba(236,195,77,0.1);
+    --note-warning-border-color: rgba(236,195,77,0.6);
+    --note-success-color: #10b981;
+    --note-success-background-color: rgba(16,185,129,0.1);
+    --note-success-border-color: rgba(16,185,129,0.6);
+    --note-danger-color: #f43f5e;
+    --note-danger-background-color: rgba(244,63,94,0.1);
+    --note-danger-border-color: rgba(244,63,94,0.6);
   }
 }
 .light-mode {
@@ -311,10 +388,25 @@
   --header-transparent-background-1: rgba(255,255,255,0.28);
   --header-transparent-background-2: rgba(255,255,255,0.4);
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-  --article-aging-tips-color: #b78d0f;
-  --article-aging-tips-background-color: rgba(183,141,15,0.1);
-  --article-aging-tips-border-color: rgba(183,141,15,0.6);
   --post-h-bottom-border-color: rgba(80,80,92,0.15);
+  --article-aging-tips-color: $article-aging-tips-color;
+  --article-aging-tips-background-color: $article-aging-tips-background-color;
+  --article-aging-tips-border-color: $article-aging-tips-border-color;
+  --note-default-color: rgba(117,117,122,0.8);
+  --note-default-background-color: rgba(117,117,122,0.1);
+  --note-default-border-color: rgba(117,117,122,0.6);
+  --note-primary-color: #0458ab;
+  --note-primary-background-color: rgba(4,88,171,0.1);
+  --note-primary-border-color: rgba(4,88,171,0.6);
+  --note-warning-color: #b78d0f;
+  --note-warning-background-color: rgba(183,141,15,0.1);
+  --note-warning-border-color: rgba(183,141,15,0.6);
+  --note-success-color: #10b981;
+  --note-success-background-color: rgba(16,185,129,0.1);
+  --note-success-border-color: rgba(16,185,129,0.6);
+  --note-danger-color: #f43f5e;
+  --note-danger-background-color: rgba(244,63,94,0.1);
+  --note-danger-border-color: rgba(244,63,94,0.6);
 }
 .dark-mode {
   --primary-color: #06c;
@@ -348,10 +440,25 @@
   --header-transparent-background-1: rgba(34,39,46,0.28);
   --header-transparent-background-2: rgba(34,39,46,0.4);
   --pjax-progress-bar-color: linear-gradient(45deg, #ea404a, #ea722f, #e9a71f, #67e559, #18ecec, #1b85f1, #ee1dee);
-  --article-aging-tips-color: #ecc34d;
-  --article-aging-tips-background-color: rgba(236,195,77,0.1);
-  --article-aging-tips-border-color: rgba(236,195,77,0.6);
   --post-h-bottom-border-color: rgba(173,186,197,0.15);
+  --article-aging-tips-color: $dark-article-aging-tips-color;
+  --article-aging-tips-background-color: $dark-article-aging-tips-background-color;
+  --article-aging-tips-border-color: $dark-article-aging-tips-border-color;
+  --note-default-color: #9999a2;
+  --note-default-background-color: rgba(153,153,162,0.1);
+  --note-default-border-color: rgba(153,153,162,0.5);
+  --note-primary-color: #268bef;
+  --note-primary-background-color: rgba(38,139,239,0.1);
+  --note-primary-border-color: rgba(38,139,239,0.6);
+  --note-warning-color: #ecc34d;
+  --note-warning-background-color: rgba(236,195,77,0.1);
+  --note-warning-border-color: rgba(236,195,77,0.6);
+  --note-success-color: #10b981;
+  --note-success-background-color: rgba(16,185,129,0.1);
+  --note-success-border-color: rgba(16,185,129,0.6);
+  --note-danger-color: #f43f5e;
+  --note-danger-background-color: rgba(244,63,94,0.1);
+  --note-danger-border-color: rgba(244,63,94,0.6);
 }
 * {
   transition-delay: 0s, 0s, 0s, 0s;
@@ -566,14 +673,15 @@ img[lazyload]::after {
   position: absolute;
   top: -0.4rem;
   left: 50%;
-  z-index: 1008;
+  z-index: 1011;
   display: none;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   min-height: 6rem;
-  background: var(--text-color-6);
-  border: 0.2rem solid var(--text-color-3);
+  overflow: hidden;
+  background: var(--background-color-3);
+  border: 0.2rem solid var(--text-color-4);
   border-radius: 0.3rem;
   transform: translateX(-50%) translateY(-100%);
   transition-delay: 0s, 0s, 0s, 0s, 0s;
@@ -585,7 +693,20 @@ img[lazyload]::after {
   -webkit-user-select: none;
   user-select: none;
 }
+.tooltip-img .tooltip-img-box.has-tip {
+  flex-direction: column;
+  justify-content: space-between;
+}
 .tooltip-img .tooltip-img-box img {
   display: block;
   max-height: 10rem;
+}
+.tooltip-img .tooltip-img-box .tip {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
 }

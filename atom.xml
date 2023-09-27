@@ -33,6 +33,14 @@
     
     
     
+    <category term="Test" scheme="https://ratears.github.io/dev.ratears.life/categories/Test/"/>
+    
+    <category term="c1" scheme="https://ratears.github.io/dev.ratears.life/categories/Test/c1/"/>
+    
+    
+    <category term="Test" scheme="https://ratears.github.io/dev.ratears.life/tags/Test/"/>
+    
+    <category term="t1" scheme="https://ratears.github.io/dev.ratears.life/tags/t1/"/>
     
   </entry>
   

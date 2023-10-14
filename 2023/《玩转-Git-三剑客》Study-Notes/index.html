@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            《玩转 Git 三剑客》Study Notes |
         
         Ratears&#39;s Blog
     </title>
@@ -198,12 +198,12 @@
 
             
                 <div class="article-content-top border-box"
-                     style="height: 320px"
+                     style="height: 280px"
                 >
                     <div class="cover-article-title">
-                        Hello World
+                        《玩转 Git 三剑客》Study Notes
                     </div>
-                    <img class="post-cover" src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/1695828059829.webp"
+                    <img class="post-cover" src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.2c01jzykhp34.webp"
                          onerror="this.style.display='none'"
                     >
                 </div>
@@ -237,24 +237,46 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-09-25 03:25:44</span>
-                <span class="mobile">2023-09-25 03:25</span>
+                <span class="pc">2023-10-14 16:21:20</span>
+                <span class="mobile">2023-10-14 16:21</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Mon Sep 25 2023 03:25:44 GMT+0800">2023-09-25 03:25:44</span>
+                <span class="pc" data-updated="Sat Oct 14 2023 16:21:20 GMT+0800">2023-10-14 16:21:20</span>
             </span>
         
 
         
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                            <li class="category-item">
+                                
+                                <a href="/dev.ratears.life/categories/Git/">Git</a>
+                            </li>
+                        
+                    
+                </ul>
+            </span>
+        
 
+        
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/Git/">Git</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
         
             <span class="meta-info-item article-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>75 Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>470 Words</span>
             </span>
         
         
@@ -280,21 +302,86 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<span id="more"></span>
+                    <br>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h1 id="第一章：Git基础-13讲"><a href="#第一章：Git基础-13讲" class="headerlink" title="第一章：Git基础 (13讲)"></a>第一章：Git基础 (13讲)</h1><h2 id="版本控制系统-VCS"><a href="#版本控制系统-VCS" class="headerlink" title="版本控制系统 &#x2F; VCS"></a>版本控制系统 &#x2F; VCS</h2><ul>
+<li><strong>版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统</strong></li>
+</ul>
+<h3 id="本地版本控制系统"><a href="#本地版本控制系统" class="headerlink" title="本地版本控制系统"></a>本地版本控制系统</h3><ul>
+<li>⽤用⽬目录拷⻉贝区别不不同版本</li>
+<li>公共⽂文件容易易被覆盖</li>
+<li>成员沟通成本很⾼高，代码集成效率低下</li>
+</ul>
+<h3 id="集中式-VCS"><a href="#集中式-VCS" class="headerlink" title="集中式 VCS"></a>集中式 VCS</h3><ul>
+<li>有集中的版本管理理服务器器</li>
+<li>具备文件版本管理和分支管理能力</li>
+<li>集成效率有明显地提⾼高</li>
+<li>客户端必须时刻和服务器器相连</li>
+</ul>
+<h3 id="分布式-VCS"><a href="#分布式-VCS" class="headerlink" title="分布式 VCS"></a>分布式 VCS</h3><ul>
+<li>服务端和客户端都有完整的版本库</li>
+<li>脱离服务端，客户端照样可以管理理版本</li>
+<li>查看历史和版本⽐比较等多数操作，都不不需要访问服务器器，⽐比集中式 VCS 更更能提⾼高版本管理理效率</li>
+</ul>
+<br>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<br>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="Git-的特点"><a href="#Git-的特点" class="headerlink" title="Git 的特点"></a>Git 的特点</h2><ul>
+<li>最优的存储能⼒力</li>
+<li>非凡的性能</li>
+<li>开源的</li>
+<li>很容易易做备份</li>
+<li>支持离线操作</li>
+<li>很容易易定制⼯工作流程</li>
+</ul>
+<br>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<br>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="Git-最小配置"><a href="#Git-最小配置" class="headerlink" title="Git 最小配置"></a>Git 最小配置</h2><ul>
+<li>配置用户信息</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27;user_name&#x27;</span><br><span class="line">git config --global user.email &#x27;user_email&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>config 的三个作用域（缺省等同于 local）</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">local</span>只对仓库有效</span></span><br><span class="line">git config --local</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">global对登录⽤用户所有仓库有效</span></span><br><span class="line">git config --global</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">system对系统的所有⽤用户有效</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git config --system</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>显示 config 的配置</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --list --local</span><br><span class="line">git config --list --global</span><br><span class="line">git config --list --system</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>设置（缺省等同于 local）</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --local</span><br><span class="line">git config --global</span><br><span class="line">git config --system</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>清除</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --unset --local user.name</span><br><span class="line">git config --unset --global user.name</span><br><span class="line">git config --unset --system user.name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>优先级：<code>local &gt; global &gt; system</code></li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="Git-基本命令"><a href="#Git-基本命令" class="headerlink" title="Git 基本命令"></a>Git 基本命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd [project_dir]</span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line">git init [project_name]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>工作目录、暂存区、版本历史</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git add [file1] [file2]</span><br><span class="line"></span><br><span class="line">git commit -m&#x27;add file remark&#x27;</span><br><span class="line"></span><br><span class="line">git mv [filename] [filename]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline</span><br><span class="line"></span><br><span class="line">git log --oneline --all</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph -n4</span><br><span class="line"></span><br><span class="line">git log --oneline --graph [branch_name]</span><br><span class="line"></span><br><span class="line">--all</span><br></pre></td></tr></table></figure>
+
 
                 </div>
 
@@ -303,11 +390,11 @@
     <div class="copyright-info-content border-box">
         <div class="copyright-info-top border-box">
             <div class="post-title border-box text-ellipsis">
-                Hello World
+                《玩转 Git 三剑客》Study Notes
             </div>
 
             <div class="post-link border-box text-ellipsis">
-                2023/hello-world/
+                2023/《玩转-Git-三剑客》Study-Notes/
             </div>
         </div>
 
@@ -323,7 +410,7 @@
                 <div class="type">
                     Published
                 </div>
-                <div class="content">2023-09-25 03:25</div>
+                <div class="content">2023-10-14 16:21</div>
             </div>
 
 
@@ -353,6 +440,14 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/Git/">Git</a>
+                                    </li>
+                                
+                            </ul>
                         
                     </div>
                     <div>
@@ -388,22 +483,22 @@
                 
                     <div class="article-nav">
                         
-                            <div class="article-prev">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/dev.ratears.life/2023/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE/"
-                                   title="Hexo常用命令与核心配置"
+                        
+                            <div class="article-next">
+                                <a class="next"
+                                   rel="next"
+                                   href="/dev.ratears.life/2023/%E3%80%8A%E9%AB%98%E7%BA%A7Redis%E8%BF%9B%E9%98%B6%E8%AF%BE-%E8%A7%A3%E5%86%B3Redis%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98-%E6%8E%8C%E6%8F%A1Redis6-x%E7%89%B9%E6%80%A7%E3%80%8BStudy-Notes/"
+                                   title="《高级Redis进阶课 解决Redis实际问题+掌握Redis6.x特性》Study Notes"
                                 >
-                                    <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">《高级Redis进阶课 解决Redis实际问题+掌握Redis6.x特性》Study Notes</span>
+                                        <span class="post-nav-item">Next posts</span>
                                     </span>
-                                            <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Hexo常用命令与核心配置</span>
-                                        <span class="post-nav-item">Prev posts</span>
+                                            <span class="right arrow-icon flex-center">
+                                      <i class="fas fa-chevron-right"></i>
                                     </span>
                                 </a>
                             </div>
-                        
                         
                     </div>
                 
@@ -424,7 +519,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -619,7 +714,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 

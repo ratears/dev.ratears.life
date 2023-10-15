@@ -276,12 +276,12 @@
         
         
             <span class="meta-info-item article-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>470 Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1k Words</span>
             </span>
         
         
             <span class="meta-info-item article-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>4 Mins</span>
             </span>
         
         
@@ -376,12 +376,72 @@
 <ul>
 <li>工作目录、暂存区、版本历史</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git add [file1] [file2]</span><br><span class="line"></span><br><span class="line">git commit -m&#x27;add file remark&#x27;</span><br><span class="line"></span><br><span class="line">git mv [filename] [filename]</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git add [file1] [file2]</span><br><span class="line"></span><br><span class="line">git commit -m&#x27;add file remark&#x27;</span><br><span class="line"></span><br><span class="line">git mv [filename] [filename]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">添加到暂存区后直接commit</span></span><br><span class="line">git commit -am&#x27;add file remark&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">直接切换到某个commit，即分离头指针</span></span><br><span class="line">git checkout [commit_id]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">基于某个存在的分支（commit），创建新分支，并检出，切换到该新分支</span></span><br><span class="line">git checkout -b [new branch name] [branch_name/commit_id]</span><br><span class="line"></span><br><span class="line">git diff [commit_id] [commit_id]</span><br><span class="line"></span><br><span class="line">git diff HEAD HEAD^1/HEAD^^/HEAD~1/HEAD~2</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline</span><br><span class="line"></span><br><span class="line">git log --oneline --all</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph -n4</span><br><span class="line"></span><br><span class="line">git log --oneline --graph [branch_name]</span><br><span class="line"></span><br><span class="line">--all</span><br></pre></td></tr></table></figure>
+<h3 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline</span><br><span class="line"></span><br><span class="line">git log --oneline --all</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph</span><br><span class="line"></span><br><span class="line">git log --oneline --all --graph -n4</span><br><span class="line"></span><br><span class="line">git log --oneline --graph [branch_name]</span><br><span class="line"></span><br><span class="line">git help --web log</span><br><span class="line"></span><br><span class="line">gitk</span><br></pre></td></tr></table></figure>
 
+<br>
+
+<br>
+
+<h2 id="探密-git目录"><a href="#探密-git目录" class="headerlink" title="探密.git目录"></a>探密.git目录</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看对象类型</span></span><br><span class="line">git cat-file -t hash_num</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">看对象内容</span></span><br><span class="line">git cat-file -p hash_num</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第二章：独自使用Git时的常见场景-16讲"><a href="#第二章：独自使用Git时的常见场景-16讲" class="headerlink" title="第二章：独自使用Git时的常见场景 (16讲)"></a>第二章：独自使用Git时的常见场景 (16讲)</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">git branch -av</span><br><span class="line"></span><br><span class="line">git branch -d [branch_name]</span><br><span class="line"></span><br><span class="line">git branch -D [branch_name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">（在自己的分支上）对最近一次 commit 的message进行修改</span></span><br><span class="line">git commit --amend</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">（在自己的分支上）对历史 commit 的message进行修改，（选择r）</span></span><br><span class="line">git rebase -i [commit_id]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">（在自己的分支上）把多个commit信息合并到一起（选择s）、还可以对不连续的commit 信息进行合并</span></span><br><span class="line">git rebase -i [pre commit_id]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">暂存区和<span class="built_in">head</span>进行比较</span></span><br><span class="line">git diff --cached</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">工作区和暂存区的区别比较（所有文件）</span></span><br><span class="line">git diff</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">工作区和暂存区的区别比较（指定文件）</span></span><br><span class="line">git diff -- [file name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">暂存区恢复成HEAD，但是变更的内容会在工作区</span></span><br><span class="line">git reset HEAD</span><br><span class="line">git reset HEAD -- [file_name] [file_name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">丢掉工作区某个文件</span></span><br><span class="line">git checkout -- [file_name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">丢弃commit</span></span><br><span class="line">git reset --hard [commit_id]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">比较不同commit差异</span></span><br><span class="line">git diff [branch_name] [branch_name] -- [file_name]</span><br><span class="line">git diff [commit_id] [commit_id] -- [file_name]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">直接删除，并保存在暂存区</span></span><br><span class="line">git rm [file_name]</span><br><span class="line"></span><br><span class="line">git stash</span><br><span class="line"></span><br><span class="line">git stash list</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">弹出暂存内容，并保存在暂存区</span></span><br><span class="line">git stash apply</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">弹出暂存内容，并不保存</span></span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<h2 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">不管理doc文件，以及doc文件夹下的内容</span></span><br><span class="line">doc</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">管理doc文件，不管理doc文件夹下的内容</span></span><br><span class="line">doc/</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<h2 id="Git-备份"><a href="#Git-备份" class="headerlink" title="Git 备份"></a>Git 备份</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line">git remote add </span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第三章：Git与GitHub的简单同步-4讲"><a href="#第三章：Git与GitHub的简单同步-4讲" class="headerlink" title="第三章：Git与GitHub的简单同步 (4讲)"></a>第三章：Git与GitHub的简单同步 (4讲)</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">本地仓库和远端仓库建立链接</span></span><br><span class="line">git remote add [remote_repo_name] [url]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">把本地仓库所有分支内容推送到远端仓库</span></span><br><span class="line">git push [remote_repo_name] --all</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">把远端仓库分支拉取到本地</span></span><br><span class="line">git fetch [remote_repo_name] [remote_repo_branch]</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第四章：Git多人单分支集成协作时的常见场景-5讲"><a href="#第四章：Git多人单分支集成协作时的常见场景-5讲" class="headerlink" title="第四章：Git多人单分支集成协作时的常见场景 (5讲)"></a>第四章：Git多人单分支集成协作时的常见场景 (5讲)</h1><br>
+
+<br>
+
+<br>
+
+<h1 id="第五章：Git集成使用禁忌-2讲"><a href="#第五章：Git集成使用禁忌-2讲" class="headerlink" title="第五章：Git集成使用禁忌 (2讲)"></a>第五章：Git集成使用禁忌 (2讲)</h1><ul>
+<li>禁止使用：<code>git push -f origin branch_name</code></li>
+</ul>
+<br>
+
+<br>
+
+<br>
+
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><blockquote>
+<p>29 讲，git备份还需要再学习熟悉一下</p>
+<p>rebase？</p>
+<p>fetch?</p>
+</blockquote>
 
                 </div>
 
@@ -483,6 +543,22 @@
                 
                     <div class="article-nav">
                         
+                            <div class="article-prev">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/dev.ratears.life/2023/Software-Development-Learning-Routes-And-Resources/"
+                                   title="Software Development Learning Routes And Resources"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                      <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                            <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Software Development Learning Routes And Resources</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
                         
                             <div class="article-next">
                                 <a class="next"
@@ -519,7 +595,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A2%E5%AF%86-git%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.</span> <span class="nav-text">探密.git目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E7%8B%AC%E8%87%AA%E4%BD%BF%E7%94%A8Git%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E5%9C%BA%E6%99%AF-16%E8%AE%B2"><span class="nav-number">2.</span> <span class="nav-text">第二章：独自使用Git时的常见场景 (16讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#gitignore"><span class="nav-number">2.1.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%A4%87%E4%BB%BD"><span class="nav-number">2.2.</span> <span class="nav-text">Git 备份</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9AGit%E4%B8%8EGitHub%E7%9A%84%E7%AE%80%E5%8D%95%E5%90%8C%E6%AD%A5-4%E8%AE%B2"><span class="nav-number">3.</span> <span class="nav-text">第三章：Git与GitHub的简单同步 (4讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9AGit%E5%A4%9A%E4%BA%BA%E5%8D%95%E5%88%86%E6%94%AF%E9%9B%86%E6%88%90%E5%8D%8F%E4%BD%9C%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E5%9C%BA%E6%99%AF-5%E8%AE%B2"><span class="nav-number">4.</span> <span class="nav-text">第四章：Git多人单分支集成协作时的常见场景 (5讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9AGit%E9%9B%86%E6%88%90%E4%BD%BF%E7%94%A8%E7%A6%81%E5%BF%8C-2%E8%AE%B2"><span class="nav-number">5.</span> <span class="nav-text">第五章：Git集成使用禁忌 (2讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">6.</span> <span class="nav-text">说明</span></a></li></ol>
     </div>
 </div>
 
@@ -571,7 +647,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">17.9k</span>
+                    <span class="item-value border-box word">18.5k</span>
                 </span>
             
 
@@ -714,7 +790,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9AGit%E5%9F%BA%E7%A1%80-13%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">第一章：Git基础 (13讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F-VCS"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制系统 &#x2F; VCS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">本地版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F-VCS"><span class="nav-number">1.1.2.</span> <span class="nav-text">集中式 VCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F-VCS"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式 VCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Git 的特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E6%9C%80%E5%B0%8F%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">Git 最小配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">Git 基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.4.1.</span> <span class="nav-text">git log</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A2%E5%AF%86-git%E7%9B%AE%E5%BD%95"><span class="nav-number">1.5.</span> <span class="nav-text">探密.git目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E7%8B%AC%E8%87%AA%E4%BD%BF%E7%94%A8Git%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E5%9C%BA%E6%99%AF-16%E8%AE%B2"><span class="nav-number">2.</span> <span class="nav-text">第二章：独自使用Git时的常见场景 (16讲)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#gitignore"><span class="nav-number">2.1.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%A4%87%E4%BB%BD"><span class="nav-number">2.2.</span> <span class="nav-text">Git 备份</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9AGit%E4%B8%8EGitHub%E7%9A%84%E7%AE%80%E5%8D%95%E5%90%8C%E6%AD%A5-4%E8%AE%B2"><span class="nav-number">3.</span> <span class="nav-text">第三章：Git与GitHub的简单同步 (4讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9AGit%E5%A4%9A%E4%BA%BA%E5%8D%95%E5%88%86%E6%94%AF%E9%9B%86%E6%88%90%E5%8D%8F%E4%BD%9C%E6%97%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E5%9C%BA%E6%99%AF-5%E8%AE%B2"><span class="nav-number">4.</span> <span class="nav-text">第四章：Git多人单分支集成协作时的常见场景 (5讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9AGit%E9%9B%86%E6%88%90%E4%BD%BF%E7%94%A8%E7%A6%81%E5%BF%8C-2%E8%AE%B2"><span class="nav-number">5.</span> <span class="nav-text">第五章：Git集成使用禁忌 (2讲)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">6.</span> <span class="nav-text">说明</span></a></li></ol>
     </div>
 </div>
 

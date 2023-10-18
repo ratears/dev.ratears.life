@@ -23,9 +23,26 @@
     <published>2023-10-17T19:42:05.246Z</published>
     <updated>2023-10-17T19:42:05.246Z</updated>
     
+    <content type="html"><![CDATA[<br><h1 id="第1章-课程介绍"><a href="#第1章-课程介绍" class="headerlink" title="第1章 课程介绍"></a>第1章 课程介绍</h1><h2 id="两大模块"><a href="#两大模块" class="headerlink" title="两大模块"></a>两大模块</h2><ul><li>核心技术讲解与原理分析：<ul><li>最新版本使用</li><li>学以致用</li><li>原理分析及源代码剖析</li><li>体会RocketMQ设计思想</li></ul></li><li>双十一抗压实战基于RocketMQ落地</li></ul><br><br><h2 id="学完课程可以获得的技能"><a href="#学完课程可以获得的技能" class="headerlink" title="学完课程可以获得的技能"></a>学完课程可以获得的技能</h2><ul><li>掌握RocketMQ核心应用，更好的应对工作中MQ相关挑战</li><li>掌握RocketMQ集群搭建，助力快速投入到生产环境中</li><li>生产者: 轻松解决消息同步&#x2F;异步、延迟、顺序等问题</li><li>消费者: 真正理解Offset存储机制、消费端重试、幂等策略</li><li>核心原理，进阶掌握高可用机制、协调服务，刷盘赋值策略</li><li>SpringBoot2.x + Dubbo + Hystrix + RocketMO</li><li>分流&#x2F;限流，缓存路由，负载均衡，分库分表，抗压点分析</li><li>理解电商平台双十一高并发抗压的全链路核心流程</li></ul><br><br><h2 id="课程安排"><a href="#课程安排" class="headerlink" title="课程安排"></a>课程安排</h2><ul><li><p>RocketMQ-初探门径</p><ul><li>.RocketMQ整体认知</li><li>核心概念模型解析</li><li>源码结构解析</li><li>编译部署&amp;环境搭建</li><li>SpringBoot控制台讲解</li></ul></li><li><p>RocketMQ-急速入门</p><ul><li>生产者模型使用</li><li>消费者模型使用</li><li>四种集群环境讲解</li><li>主从集群环境构建</li><li>数据高可用机制故障演练</li></ul></li></ul><br><br><br><h1 id="第2章-RocketMQ初探门径"><a href="#第2章-RocketMQ初探门径" class="headerlink" title="第2章 RocketMQ初探门径"></a>第2章 RocketMQ初探门径</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;br&gt;
+
+&lt;h1 id=&quot;第1章-课程介绍&quot;&gt;&lt;a href=&quot;#第1章-课程介绍&quot; class=&quot;headerlink&quot; title=&quot;第1章 课程介绍&quot;&gt;&lt;/a&gt;第1章 课程介绍&lt;/h1&gt;&lt;h2 id=&quot;两大模块&quot;&gt;&lt;a href=&quot;#两大模块&quot; class=&quot;header</summary>
+      
     
     
     
+    <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/RocketMQ/"/>
+    
+    
+    <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/tags/MQ/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
     
   </entry>
   

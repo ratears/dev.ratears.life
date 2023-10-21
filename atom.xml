@@ -6,7 +6,7 @@
   <link href="https://ratears.github.io/dev.ratears.life/atom.xml" rel="self"/>
   
   <link href="https://ratears.github.io/dev.ratears.life/"/>
-  <updated>2023-10-19T16:15:45.991Z</updated>
+  <updated>2023-10-21T16:08:41.638Z</updated>
   <id>https://ratears.github.io/dev.ratears.life/</id>
   
   <author>
@@ -17,15 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《Linux核心技能与应用》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ALinux%E6%A0%B8%E5%BF%83%E6%8A%80%E8%83%BD%E4%B8%8E%E5%BA%94%E7%94%A8%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ALinux%E6%A0%B8%E5%BF%83%E6%8A%80%E8%83%BD%E4%B8%8E%E5%BA%94%E7%94%A8%E3%80%8BStudy-Notes/</id>
+    <published>2023-10-21T16:08:41.638Z</published>
+    <updated>2023-10-21T16:08:41.638Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>《SpringBoot3.0 + RocketMq 构建企业级数据中台》Study Notes</title>
     <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ASpringBoot3-0-RocketMq-%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E3%80%8BStudy-Notes/"/>
     <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ASpringBoot3-0-RocketMq-%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E3%80%8BStudy-Notes/</id>
     <published>2023-10-19T16:15:45.991Z</published>
     <updated>2023-10-19T16:15:45.991Z</updated>
     
+    <content type="html"><![CDATA[<br><h1 id="第1章-课程引言"><a href="#第1章-课程引言" class="headerlink" title="第1章 课程引言"></a>第1章 课程引言</h1><h2 id="课程导学"><a href="#课程导学" class="headerlink" title="课程导学"></a>课程导学</h2><h3 id="企业数据应用问题引入"><a href="#企业数据应用问题引入" class="headerlink" title="企业数据应用问题引入"></a>企业数据应用问题引入</h3><ul><li>开发效率低下</li><li>数据重复开发</li><li>数据质量低下</li><li>数据孤岛</li></ul><h3 id="课程介绍"><a href="#课程介绍" class="headerlink" title="课程介绍"></a>课程介绍</h3><ul><li>业务背景:智慧校园场景</li><li>场景问题引入</li><li>数据中台</li></ul><h3 id="课程安排"><a href="#课程安排" class="headerlink" title="课程安排"></a>课程安排</h3><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.4xvfchj7yu00.webp" /><h3 id="课程特色"><a href="#课程特色" class="headerlink" title="课程特色"></a>课程特色</h3><ul><li>手把手代码开发，真正带你从零开始体验</li><li>组件式开发</li><li>源码深度实践</li><li>架构设计模式</li><li>企业完整项目流程和开发体验</li></ul><h3 id="课程收获"><a href="#课程收获" class="headerlink" title="课程收获"></a>课程收获</h3><ul><li>理解数据中台架构理念，实现数据中台的构建</li><li>积累实际企业项目开发经验</li><li>培养解决问题的能力和思路</li><li>提高对SpringBoot源码的认知深度，从源码转化为技术能力</li><li>提高编码质量</li></ul><h3 id="适合人群"><a href="#适合人群" class="headerlink" title="适合人群"></a>适合人群</h3><ul><li>想体验企业完整项目开发流程，积累开发经验</li><li>想要构建企业数据中台的开发人群</li><li>想要提升技能水平，突破瓶颈，晋级中高级的人群</li></ul><br><br><h2 id="数据中台项目展示及技术栈梳理"><a href="#数据中台项目展示及技术栈梳理" class="headerlink" title="数据中台项目展示及技术栈梳理"></a>数据中台项目展示及技术栈梳理</h2><h3 id="项目展示"><a href="#项目展示" class="headerlink" title="项目展示"></a>项目展示</h3><ul><li>略</li></ul><h3 id="技术栈梳理"><a href="#技术栈梳理" class="headerlink" title="技术栈梳理"></a>技术栈梳理</h3><ul><li>前端：Vue 3.2.13</li><li>服务端：SpringBoot 3.0.5</li></ul><h3 id="服务端技术要点"><a href="#服务端技术要点" class="headerlink" title="服务端技术要点"></a>服务端技术要点</h3><ul><li>SpringBoot 3.0.5</li><li>JDK17</li><li>动态多数据源技术</li><li>Mybatis Plus 3.5.3</li><li>RocketMQ 5.0.0</li><li>ElasticJob 3.0.2</li><li>Dubbo 3.2.0-beta.6</li><li>Google aviator 5.3.3</li><li>架构设计模式</li><li>MapStruct 1.5.3.Final</li></ul><br><br><h2 id="学习建议"><a href="#学习建议" class="headerlink" title="学习建议"></a>学习建议</h2><ul><li>课程学习方法：<ul><li>动手撸代码</li></ul></li><li>组件源码学习方法：<ul><li>先抓住主干，骨架</li></ul></li></ul><br><br><br><h1 id="第2章-认知数据中台"><a href="#第2章-认知数据中台" class="headerlink" title="第2章 认知数据中台"></a>第2章 认知数据中台</h1><br><br><br><h1 id="第3章-数据中台建设-前置理论基础"><a href="#第3章-数据中台建设-前置理论基础" class="headerlink" title="第3章 数据中台建设 - 前置理论基础"></a>第3章 数据中台建设 - 前置理论基础</h1><br><br><br><h1 id="第4章-构建数据模型-数据处理的原材料"><a href="#第4章-构建数据模型-数据处理的原材料" class="headerlink" title="第4章 构建数据模型 - 数据处理的原材料"></a>第4章 构建数据模型 - 数据处理的原材料</h1><br><br><br>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;br&gt;
+
+&lt;h1 id=&quot;第1章-课程引言&quot;&gt;&lt;a href=&quot;#第1章-课程引言&quot; class=&quot;headerlink&quot; title=&quot;第1章 课程引言&quot;&gt;&lt;/a&gt;第1章 课程引言&lt;/h1&gt;&lt;h2 id=&quot;课程导学&quot;&gt;&lt;a href=&quot;#课程导学&quot; class=&quot;header</summary>
+      
     
     
     
+    <category term="SpringBoot" scheme="https://ratears.github.io/dev.ratears.life/categories/SpringBoot/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/SpringBoot/RocketMQ/"/>
+    
+    <category term="数据中台" scheme="https://ratears.github.io/dev.ratears.life/categories/SpringBoot/RocketMQ/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0/"/>
+    
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
+    
+    <category term="数据中台" scheme="https://ratears.github.io/dev.ratears.life/tags/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0/"/>
+    
+    <category term="SpringBoot" scheme="https://ratears.github.io/dev.ratears.life/tags/SpringBoot/"/>
     
   </entry>
   
@@ -53,9 +87,9 @@
     <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/RocketMQ/"/>
     
     
-    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
-    
     <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/tags/MQ/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
     
   </entry>
   
@@ -170,9 +204,9 @@
     <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/RocketMQ/"/>
     
     
-    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
-    
     <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/tags/MQ/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
     
   </entry>
   
@@ -200,9 +234,9 @@
     <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/RocketMQ/"/>
     
     
-    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
-    
     <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/tags/MQ/"/>
+    
+    <category term="RocketMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RocketMQ/"/>
     
   </entry>
   

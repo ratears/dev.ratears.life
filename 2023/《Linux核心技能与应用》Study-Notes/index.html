@@ -197,12 +197,19 @@
         <div class="article-content-container border-box">
 
             
-
-            <div class="article-content-bottom border-box">
-                
-                    <div class="article-title">
+                <div class="article-content-top border-box"
+                     style="height: 250px"
+                >
+                    <div class="cover-article-title">
                         《Linux核心技能与应用》Study Notes
                     </div>
+                    <img class="post-cover" src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.3stryzcu4gk0.webp"
+                         onerror="this.style.display='none'"
+                    >
+                </div>
+            
+
+            <div class="article-content-bottom border-box has-cover">
                 
 
                 
@@ -241,14 +248,40 @@
         
 
         
-
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                            <li class="category-item">
+                                
+                                <a href="/dev.ratears.life/categories/Linux/">Linux</a>
+                            </li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/Linux/">Linux</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item article-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.9k Words</span>
+            </span>
         
         
             <span class="meta-info-item article-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>7 Mins</span>
             </span>
         
         
@@ -269,7 +302,229 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    
+                    <br>
+
+<h1 id="第1章-课程介绍"><a href="#第1章-课程介绍" class="headerlink" title="第1章 课程介绍"></a>第1章 课程介绍</h1><ul>
+<li>Android 和苹果的操作系统底层都是类 Linux</li>
+</ul>
+<blockquote>
+<p>Android：修改过的Linux</p>
+<p>ios &#x2F; macOS ：修改过的 Unix （类Linux）</p>
+</blockquote>
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第2章-Linux的安装与配置"><a href="#第2章-Linux的安装与配置" class="headerlink" title="第2章 Linux的安装与配置"></a>第2章 Linux的安装与配置</h1><h2 id="Linux-简介"><a href="#Linux-简介" class="headerlink" title="Linux 简介"></a>Linux 简介</h2><ul>
+<li><p>Linux 是什么：简单来说，Linux和Windows 类似，都是操作系统</p>
+</li>
+<li><p>CentoS 是什么：开源的 Linux操作系统的发行版</p>
+</li>
+<li><p>VirtualBox 是什么：一款开源虚拟机软件</p>
+</li>
+<li><p>启动 : 电脑开启</p>
+<ul>
+<li>不同电脑的“启动界面”是不尽相同的</li>
+<li>正是电脑的主板(mother board)显示了“启动界面</li>
+<li>主板是电脑最主要的部分</li>
+</ul>
+</li>
+<li><p>主板</p>
+<ul>
+<li>英语是Motherboard 或Mainboard</li>
+<li>又称主机板、系统板、逻辑板、母板、底板，等</li>
+</ul>
+</li>
+<li><p>Windows 启动的必要性</p>
+<ul>
+<li>Windows启动后，才可以使用各种应用程序</li>
+<li>你的电脑需要一个类似“大管家”的软件</li>
+<li>“大管家”软件起到连接电脑硬件和软件的“桥梁”的作用</li>
+</ul>
+</li>
+<li><p>操作系统是“大管家”</p>
+<ul>
+<li>操作系统，简称 OS，是 Operating System 的首字母</li>
+</ul>
+</li>
+<li><p>电脑按以下顺序执行任务</p>
+<ul>
+<li>启动界面（主板）</li>
+<li>操作系统(例如 Windows)的启动</li>
+<li>其他程序(或称软件)的启动</li>
+</ul>
+</li>
+<li><p>Linux就是一个操作系统</p>
+</li>
+</ul>
+<blockquote>
+<p>类似的还有 macos，是苹果研发的操作系统</p>
+<p>相比于Windows，Linux 以它的可靠和安全著称，而且更新频繁</p>
+</blockquote>
+<blockquote>
+<p>一台电脑可以拥有两个(甚至更多)的操作系统</p>
+<p>当启动界面结束后，会有一个被称为 bootloader 的程序显示出来</p>
+<p>bootloader 让你做出选择，到底选择哪个操作系统来启动</p>
+</blockquote>
+<ul>
+<li><p>bootloader</p>
+<ul>
+<li>boot(表示“启动”)，loader(表示“加载器”)，通过这段小程序，初始化硬件设备、建立内存空间的映射图，为最终调用操作系统内核准备好正确的环境</li>
+<li>通常 bootloader 是严重依赖于硬件而实现的，特别在嵌入式领域</li>
+<li>一般在 Linux和 Windows 之间做出选择的 bootloader 叫GRUB</li>
+<li>如果没有做出选择，GRUB在几秒之后就会启动默认的操作系统</li>
+</ul>
+</li>
+<li><p>不同操作系统上的程序</p>
+</li>
+</ul>
+<blockquote>
+<p>Windows的程序在 Linux 下不能运行，反之亦然</p>
+<p>有些技术使 Windows的程序在 Linux 下可以运行，例如Wine，但终归是使用专为 Linux定制的程序比较好</p>
+</blockquote>
+<ul>
+<li>Linux 上的程序有很多优点</li>
+</ul>
+<blockquote>
+<p>免费:基本上 Linux上的所有程序都是免费的</p>
+<p>更新频繁，更新也是免费的</p>
+<p>不少程序的 Linux 版更优秀，有些程序没有 Windows 版</p>
+</blockquote>
+<ul>
+<li><p>1984：微软刚刚发布第一个操作系统:MS-DOS</p>
+</li>
+<li><p>除了 DOS，也有一个操作系统很有名，就是 Unix；Unix 是 1969 年(或 1970年)诞生的</p>
+</li>
+<li><p><strong>操作系统是电脑和应用程序之间的连接工具</strong></p>
+</li>
+<li><p>Windows，macos和 Linux 是最常用的操作系统</p>
+</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="GNU-项目和-Linux-的不同发行版"><a href="#GNU-项目和-Linux-的不同发行版" class="headerlink" title="GNU 项目和 Linux 的不同发行版"></a>GNU 项目和 Linux 的不同发行版</h2><h3 id="GNU-项目"><a href="#GNU-项目" class="headerlink" title="GNU 项目"></a>GNU 项目</h3><ul>
+<li>GNU在英语里是“牛羚”的意思</li>
+<li>GNU是“GNUis Not Unix” (“GNU 不是 Unix”)的递归缩写</li>
+<li>1984年，Richard Stallman ( 理查德斯托曼)创立了GNU 项目</li>
+</ul>
+<h3 id="Richard-Stallman-理查德斯托曼"><a href="#Richard-Stallman-理查德斯托曼" class="headerlink" title="Richard Stallman ( 理查德斯托曼 )"></a>Richard Stallman ( 理查德斯托曼 )</h3><ul>
+<li>自由软件基金会( Free Software Foundation )的主席</li>
+<li>GNU项目的创始人</li>
+<li>著名黑客，1971 年进入哈佛大学学习，同年受聘于麻省理工学院</li>
+<li>代表作品:Emacs 编辑器，GCC 编译器，GDB 调试器</li>
+<li>获得过很多荣誉奖章，1991 年获得格雷斯霍普奖</li>
+<li>GNU项目在当时的首要目的是创立一个类Unix的操作系统</li>
+</ul>
+<h3 id="自由和免费的区别"><a href="#自由和免费的区别" class="headerlink" title="自由和免费的区别"></a>自由和免费的区别</h3><ul>
+<li>自由的软件意味着源代码必须公开</li>
+<li>自由的软件大部分时候是免费的，但也可以复制，修改和出售</li>
+</ul>
+<h3 id="Linus-Torvalds-李纳斯·托沃兹）"><a href="#Linus-Torvalds-李纳斯·托沃兹）" class="headerlink" title="Linus Torvalds (李纳斯·托沃兹）"></a>Linus Torvalds (李纳斯·托沃兹）</h3><ul>
+<li>1991年Linus Torvalds 在业余时间编写了一个类Unix的内核</li>
+<li>Linux 这个名字可以说是 Linus 和Unix 的合并</li>
+<li>Linux 也可以说是“LinuxIs Not Unix”的递归缩写</li>
+</ul>
+<h3 id="Linux-吉祥物"><a href="#Linux-吉祥物" class="headerlink" title="Linux 吉祥物"></a>Linux 吉祥物</h3><ul>
+<li>一只名叫 Tux的萌萌的雄性企鹅。Tux 是英语“燕尾服”的意思</li>
+<li>为 Linux 设计吉祥物的画家征求意见，其他人提议模仿其他软件</li>
+<li>Linus Torvalds说:“我以前在澳大利亚被一只企鹅咬过“</li>
+</ul>
+<h3 id="Linux-和-GNU-项目的联系"><a href="#Linux-和-GNU-项目的联系" class="headerlink" title="Linux 和 GNU 项目的联系"></a>Linux 和 GNU 项目的联系</h3><ul>
+<li>这两个项目是互补的:Linus 其实就是写了一个类Unix的内核</li>
+<li>1991 年，GNU 项目已经创建了不少操作系统的外围软件了</li>
+<li>GNU 的软件 :cp 命令，rm 命令，Emacs，GCC，GDB，等</li>
+<li>后来完善Linux的工作交给了Linus 和广大开源社区的黑客们</li>
+<li>Linus是站在开源社区的巨人肩膀上的“芬兰小毛孩子” (大牛)</li>
+<li>GNU 项目+ Linux (系统内核)&#x3D; GNU&#x2F;Linux 完整的操作系统</li>
+</ul>
+<blockquote>
+<p>操作系统的核心称为“内核”，但内核并不就等于操作系统</p>
+<p>内核提供系统服务，比如文件管理、虚拟内存、设备I&#x2F;0等，还包含一些基本的程序，例如 文本编辑器，编译器，外壳程序 Shell</p>
+<p>单独的 Linux内核没办法工作，须要有GNU项目的众多应用程序</p>
+<p>Linux的官方称谓应该是“GNU&#x2F;Linux”，一般简称 Linux</p>
+</blockquote>
+<ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.kernel.org/" >Linux 内核的官网<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="各个操作系统之间关系"><a href="#各个操作系统之间关系" class="headerlink" title="各个操作系统之间关系"></a>各个操作系统之间关系</h2><ul>
+<li>macos和 Linux的设计理念基于 Unix，Unix 可以说是它们的祖先</li>
+<li>目前大部分 Windows 版本是基于革命性的 Windows NT 内核</li>
+<li>我们说 macos和Linux 基于 Unix，只是说复刻了 Unix 的运行模式</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="Linux-发行版"><a href="#Linux-发行版" class="headerlink" title="Linux 发行版"></a>Linux 发行版</h2><ul>
+<li>因为是开源自由的，Linux 不像 Windows 那么死板</li>
+<li>Linux 发行版:简化用户安装的过程，以及提供一些基本的软件，这种“发行版”的概念在 Windows 可以说并没有</li>
+</ul>
+<h3 id="Linux-发行版之间主要区别"><a href="#Linux-发行版之间主要区别" class="headerlink" title="Linux 发行版之间主要区别"></a>Linux 发行版之间主要区别</h3><ul>
+<li>安装方法不一样:有的复杂，有的简单</li>
+<li>安装应用程序的方式不一样</li>
+<li>预装的应用程序不一样</li>
+</ul>
+<h3 id="不同的-Linux-发行版"><a href="#不同的-Linux-发行版" class="headerlink" title="不同的 Linux 发行版"></a>不同的 Linux 发行版</h3><ul>
+<li>Red Hat:性能稳定，老牌的Linux发行版。收费的是 RHEL</li>
+<li>Fedora :Red Hat 的社区免费后继版</li>
+<li>Centos:算是 RHEL 的克隆版，免费。本课程使用</li>
+<li>Deepin:中国发行。对优秀的开源产品进行集成和配置，开发软件</li>
+<li>Debian :算是迄今为止，最遵循 GNU 规范的 Linux 系统</li>
+<li>Ubuntu:Debian 的后继或一个分支</li>
+</ul>
+<h3 id="Red-Hat-家族主要成员"><a href="#Red-Hat-家族主要成员" class="headerlink" title="Red Hat 家族主要成员"></a>Red Hat 家族主要成员</h3><ul>
+<li>RHEL : Red Hat 企业版</li>
+<li>Fedora:Red Hat 的社区免费后继版</li>
+<li>Centos:RHEL的克隆版，免费。结合了 RHEL和 Fedora 的特性</li>
+</ul>
+<h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><ul>
+<li>CentOS是Community Enterprise Operating System 的缩写</li>
+<li>CentOs 兼具 Community (社区)和Enterprise(企业)的特性</li>
+<li>融合了 Fedora和 Red Hat 企业版的优点</li>
+<li>CentOs 稳定、长期支持(10 年)、保守、大规模使用性能稳定</li>
+<li>CentoS被企业普遍使用。特别适合用来做服务器的操作系统</li>
+</ul>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul>
+<li>macos和 Windows 的源代码是闭源的(看不到)，Linux 则开源</li>
+<li>有很多不同的 Linux 变体，术语称为“Linux发行版“</li>
+<li>在众多的 Linux 发行版中，Centos 非常流行、支持很广</li>
+</ul>
+<h2 id="Linux的多面特性"><a href="#Linux的多面特性" class="headerlink" title="Linux的多面特性"></a>Linux的多面特性</h2><ul>
+<li>Windows可是很贵的，一个操作系统要几百美元，Linux却是免费的</li>
+<li>不论是哪一个 Linux发行版，都有两种使用 Linux的方式：<ul>
+<li>命令行界面 (类似DOS 操作系统)</li>
+<li>图形界面（类似Windows 操作系统）</li>
+</ul>
+</li>
+<li>主流的桌面管理器：<ul>
+<li>Gnome</li>
+<li>KDE</li>
+<li>XFCE</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="虚拟技术-虚拟化-Virtualization"><a href="#虚拟技术-虚拟化-Virtualization" class="headerlink" title="虚拟技术&#x2F;虚拟化( Virtualization )"></a>虚拟技术&#x2F;虚拟化( Virtualization )</h2><ul>
+<li>一种通过组合或分区现有的计算机资源(CPU、内存、磁盘空间等)，使得这些资源表现为一个或多个操作环境，从而提供优于原有资源配置的访问方式的技术</li>
+</ul>
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第3章-Linux基础知识和命令"><a href="#第3章-Linux基础知识和命令" class="headerlink" title="第3章 Linux基础知识和命令"></a>第3章 Linux基础知识和命令</h1>
                 </div>
 
                 
@@ -328,6 +583,14 @@
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
                         
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/Linux/">Linux</a>
+                                    </li>
+                                
+                            </ul>
+                        
                     </div>
                     <div>
                         
@@ -361,6 +624,22 @@
 
                 
                     <div class="article-nav">
+                        
+                            <div class="article-prev">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/dev.ratears.life/2023/%E3%80%8AJava%E4%B8%BB%E6%B5%81%E5%88%86%E5%B8%83%E5%BC%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%9A%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/"
+                                   title="《Java主流分布式解决方案多场景设计与实战》Study Notes"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                      <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                            <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">《Java主流分布式解决方案多场景设计与实战》Study Notes</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
                         
                         
                             <div class="article-next">
@@ -398,7 +677,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">第1章 课程介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">第2章 Linux的安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E7%AE%80%E4%BB%8B"><span class="nav-number">2.1.</span> <span class="nav-text">Linux 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GNU-%E9%A1%B9%E7%9B%AE%E5%92%8C-Linux-%E7%9A%84%E4%B8%8D%E5%90%8C%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.2.</span> <span class="nav-text">GNU 项目和 Linux 的不同发行版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GNU-%E9%A1%B9%E7%9B%AE"><span class="nav-number">2.2.1.</span> <span class="nav-text">GNU 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Richard-Stallman-%E7%90%86%E6%9F%A5%E5%BE%B7%E6%96%AF%E6%89%98%E6%9B%BC"><span class="nav-number">2.2.2.</span> <span class="nav-text">Richard Stallman ( 理查德斯托曼 )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E7%94%B1%E5%92%8C%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.2.3.</span> <span class="nav-text">自由和免费的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linus-Torvalds-%E6%9D%8E%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E6%B2%83%E5%85%B9%EF%BC%89"><span class="nav-number">2.2.4.</span> <span class="nav-text">Linus Torvalds (李纳斯·托沃兹）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%90%89%E7%A5%A5%E7%89%A9"><span class="nav-number">2.2.5.</span> <span class="nav-text">Linux 吉祥物</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%92%8C-GNU-%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%81%94%E7%B3%BB"><span class="nav-number">2.2.6.</span> <span class="nav-text">Linux 和 GNU 项目的联系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E4%B8%AA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-number">2.3.</span> <span class="nav-text">各个操作系统之间关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.4.</span> <span class="nav-text">Linux 发行版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%8F%91%E8%A1%8C%E7%89%88%E4%B9%8B%E9%97%B4%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB"><span class="nav-number">2.4.1.</span> <span class="nav-text">Linux 发行版之间主要区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84-Linux-%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.4.2.</span> <span class="nav-text">不同的 Linux 发行版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Red-Hat-%E5%AE%B6%E6%97%8F%E4%B8%BB%E8%A6%81%E6%88%90%E5%91%98"><span class="nav-number">2.4.3.</span> <span class="nav-text">Red Hat 家族主要成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CentOS"><span class="nav-number">2.4.4.</span> <span class="nav-text">CentOS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">2.4.5.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E7%9A%84%E5%A4%9A%E9%9D%A2%E7%89%B9%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">Linux的多面特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%8A%80%E6%9C%AF-%E8%99%9A%E6%8B%9F%E5%8C%96-Virtualization"><span class="nav-number">2.6.</span> <span class="nav-text">虚拟技术&#x2F;虚拟化( Virtualization )</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0-Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">第3章 Linux基础知识和命令</span></a></li></ol>
     </div>
 </div>
 
@@ -450,7 +729,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">22.3k</span>
+                    <span class="item-value border-box word">25.4k</span>
                 </span>
             
 
@@ -593,7 +872,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">第1章 课程介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">第2章 Linux的安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E7%AE%80%E4%BB%8B"><span class="nav-number">2.1.</span> <span class="nav-text">Linux 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GNU-%E9%A1%B9%E7%9B%AE%E5%92%8C-Linux-%E7%9A%84%E4%B8%8D%E5%90%8C%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.2.</span> <span class="nav-text">GNU 项目和 Linux 的不同发行版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GNU-%E9%A1%B9%E7%9B%AE"><span class="nav-number">2.2.1.</span> <span class="nav-text">GNU 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Richard-Stallman-%E7%90%86%E6%9F%A5%E5%BE%B7%E6%96%AF%E6%89%98%E6%9B%BC"><span class="nav-number">2.2.2.</span> <span class="nav-text">Richard Stallman ( 理查德斯托曼 )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E7%94%B1%E5%92%8C%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.2.3.</span> <span class="nav-text">自由和免费的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linus-Torvalds-%E6%9D%8E%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E6%B2%83%E5%85%B9%EF%BC%89"><span class="nav-number">2.2.4.</span> <span class="nav-text">Linus Torvalds (李纳斯·托沃兹）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%90%89%E7%A5%A5%E7%89%A9"><span class="nav-number">2.2.5.</span> <span class="nav-text">Linux 吉祥物</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%92%8C-GNU-%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%81%94%E7%B3%BB"><span class="nav-number">2.2.6.</span> <span class="nav-text">Linux 和 GNU 项目的联系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E4%B8%AA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-number">2.3.</span> <span class="nav-text">各个操作系统之间关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.4.</span> <span class="nav-text">Linux 发行版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%8F%91%E8%A1%8C%E7%89%88%E4%B9%8B%E9%97%B4%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB"><span class="nav-number">2.4.1.</span> <span class="nav-text">Linux 发行版之间主要区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84-Linux-%E5%8F%91%E8%A1%8C%E7%89%88"><span class="nav-number">2.4.2.</span> <span class="nav-text">不同的 Linux 发行版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Red-Hat-%E5%AE%B6%E6%97%8F%E4%B8%BB%E8%A6%81%E6%88%90%E5%91%98"><span class="nav-number">2.4.3.</span> <span class="nav-text">Red Hat 家族主要成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CentOS"><span class="nav-number">2.4.4.</span> <span class="nav-text">CentOS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">2.4.5.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E7%9A%84%E5%A4%9A%E9%9D%A2%E7%89%B9%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">Linux的多面特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%8A%80%E6%9C%AF-%E8%99%9A%E6%8B%9F%E5%8C%96-Virtualization"><span class="nav-number">2.6.</span> <span class="nav-text">虚拟技术&#x2F;虚拟化( Virtualization )</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0-Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">第3章 Linux基础知识和命令</span></a></li></ol>
     </div>
 </div>
 

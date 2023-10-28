@@ -6,7 +6,7 @@
   <link href="https://ratears.github.io/dev.ratears.life/atom.xml" rel="self"/>
   
   <link href="https://ratears.github.io/dev.ratears.life/"/>
-  <updated>2023-10-26T18:37:51.668Z</updated>
+  <updated>2023-10-28T16:03:39.570Z</updated>
   <id>https://ratears.github.io/dev.ratears.life/</id>
   
   <author>
@@ -17,15 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《玩转MongoDB4.0(最新版) 从入门到实践》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E7%8E%A9%E8%BD%ACMongoDB4-0-%E6%9C%80%E6%96%B0%E7%89%88-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E7%8E%A9%E8%BD%ACMongoDB4-0-%E6%9C%80%E6%96%B0%E7%89%88-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%E3%80%8BStudy-Notes/</id>
+    <published>2023-10-28T16:03:39.570Z</published>
+    <updated>2023-10-28T16:03:39.570Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>《Java设计模式精讲 Debug方式+内存分析》Study Notes</title>
     <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AJava%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%B2%BE%E8%AE%B2-Debug%E6%96%B9%E5%BC%8F-%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E3%80%8BStudy-Notes/"/>
     <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AJava%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%B2%BE%E8%AE%B2-Debug%E6%96%B9%E5%BC%8F-%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E3%80%8BStudy-Notes/</id>
     <published>2023-10-26T18:37:51.668Z</published>
     <updated>2023-10-26T18:37:51.668Z</updated>
     
+    <content type="html"><![CDATA[<br><h1 id="第1章-课程导学"><a href="#第1章-课程导学" class="headerlink" title="第1章 课程导学"></a>第1章 课程导学</h1><h2 id="设计模式概述"><a href="#设计模式概述" class="headerlink" title="设计模式概述"></a>设计模式概述</h2><ul><li>工程师必备知识</li><li>面试高频考点</li></ul><br><br><h2 id="课程内容设计"><a href="#课程内容设计" class="headerlink" title="课程内容设计"></a>课程内容设计</h2><ul><li><p>设计模式定义</p></li><li><p>设计模式应用</p></li><li><p>源码解析</p></li><li><p>系统学习设计模式</p></li><li><p>结合大量场景 Coding</p></li><li><p>动态递进式讲解(场景-UML-代码）</p></li><li><p>采用 Debug方式及内存分析，容易理解抽象的设计模式</p></li><li><p>JDK及热门开源框架解析，领略设计模式的妙用技巧</p></li></ul><blockquote><p>真正学懂设计模式，面试中脱颖而出</p></blockquote><br><br><h2 id="课程内容概述"><a href="#课程内容概述" class="headerlink" title="课程内容概述"></a>课程内容概述</h2><h3 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h3><ul><li>UML基础</li><li>UML类图</li><li>UML时序留</li><li>UML类关系</li><li>UML记忆技巧</li></ul><h3 id="7大设计原则"><a href="#7大设计原则" class="headerlink" title="7大设计原则"></a>7大设计原则</h3><ul><li>开闭原则</li><li>依赖倒置原则</li><li>单一职责原则</li><li>接口隔离原则</li><li>迪米特原则</li><li>里氏替换原则</li><li>合成复用原则</li></ul><h3 id="设计模式-创建型模式"><a href="#设计模式-创建型模式" class="headerlink" title="设计模式-创建型模式"></a>设计模式-创建型模式</h3><ul><li>工厂方法模式</li><li>抽象工厂模式</li><li>建造者模式</li><li>单例模式</li><li>原型模式</li></ul><h3 id="设计模式-结构型模式"><a href="#设计模式-结构型模式" class="headerlink" title="设计模式-结构型模式"></a>设计模式-结构型模式</h3><ul><li>适配器模式</li><li>装饰者模式</li><li>代理模式</li><li>外观模式</li><li>桥接模式</li><li>组合模式</li><li>享元模式</li></ul><h3 id="设计模式-行为型模式"><a href="#设计模式-行为型模式" class="headerlink" title="设计模式-行为型模式"></a>设计模式-行为型模式</h3><ul><li>策略模式</li><li>观察者模式</li><li>责任链模式</li><li>备忘录模式</li><li>模板方法模式</li><li>迭代器模式</li><li>中介者模式</li><li>命令模式</li><li>访问者模式</li><li>解释器模式</li><li>状态模式</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;br&gt;
+
+&lt;h1 id=&quot;第1章-课程导学&quot;&gt;&lt;a href=&quot;#第1章-课程导学&quot; class=&quot;headerlink&quot; title=&quot;第1章 课程导学&quot;&gt;&lt;/a&gt;第1章 课程导学&lt;/h1&gt;&lt;h2 id=&quot;设计模式概述&quot;&gt;&lt;a href=&quot;#设计模式概述&quot; class=&quot;he</summary>
+      
     
     
     
+    <category term="Design-Pattern" scheme="https://ratears.github.io/dev.ratears.life/categories/Design-Pattern/"/>
+    
+    
+    <category term="Design-Pattern" scheme="https://ratears.github.io/dev.ratears.life/tags/Design-Pattern/"/>
     
   </entry>
   
@@ -156,14 +182,17 @@
     <published>2023-10-15T18:36:49.822Z</published>
     <updated>2023-10-15T18:36:49.822Z</updated>
     
-    <content type="html"><![CDATA[<br><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">熟悉JVM内存结构，垃圾回收算法等核心知识<br>熟悉JVM调优实践<br>应对高阶JVM面试题（包括笔试题、面试概述题、以及JVM实践和调优）</td></tr><tr><td align="center">入门</td><td align="left">尚硅谷宋红康JVM全套教程（详解java虚拟机）<br>深入拆解 Java 虚拟机<br/>从 0 开始带你成为JVM高手<br>深入浅出 Java 虚拟机_LG<br></td></tr><tr><td align="center">系统全面&#x2F;进阶</td><td align="left">《深入理解Java虚拟机（第3版）》<br>构建JVM知识体系 解决Java工程师必会的工作&#x2F;面试难点<br>JVM与GC调优_大厂学苑<br>深入JVM内核—原理、诊断与优化<br></td></tr><tr><td align="center">进阶&#x2F;面试</td><td align="left">JVM七大核心系统精讲 从基础理论到高级应用<br></td></tr><tr><td align="center">待定</td><td align="left">马士兵jvm、龙果学院 叶子猿 深入理解Java虚拟机、深入理解和实践JVM、反射和内省技术_腾讯课堂、一次性精通JVM JAVA虚拟机</td></tr></tbody></table><br><br><br><h1 id="MQ"><a href="#MQ" class="headerlink" title="MQ"></a>MQ</h1><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left">从零开始带你成为消息中间件实战高手<br>深入拆解消息队列 47 讲<br/>消息队列高手课</td></tr><tr><td align="center">系统全面</td><td align="left">深入拆解消息队列 47 讲<br/>消息队列高手课</td></tr><tr><td align="center">进阶</td><td align="left"></td></tr></tbody></table><br><br><h2 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left">JAVA-ACE-架构师系列视频课程- RocketMQ（上）（下）<br>RocketMQ核心技术精讲与高并发抗压实战</td></tr><tr><td align="center">系统全面</td><td align="left">RocketMQ官方文档</td></tr><tr><td align="center">进阶</td><td align="left"></td></tr><tr><td align="center">待定</td><td align="left">价值198元新版本RocketMQ4.X教程消息队列</td></tr></tbody></table><br><br><br><h1 id="Development-Tools"><a href="#Development-Tools" class="headerlink" title="Development Tools"></a>Development Tools</h1><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">熟悉常用操作，了解基本原理，了解常见问题解决方式<br>熟悉作为技术领导需要掌握的Git团队协作技能</td></tr><tr><td align="center">入门</td><td align="left">玩转 Git 三剑客</td></tr><tr><td align="center">系统全面</td><td align="left"><a class="link"   href="https://git-scm.com/book/zh/v2" >Git 官方文档<i class="fas fa-external-link-alt"></i></a></td></tr><tr><td align="center">进阶</td><td align="left">《Git权威指南》</td></tr></tbody></table><br><br><br><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><br><br><br><h1 id="template"><a href="#template" class="headerlink" title="template"></a>template</h1><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left"></td></tr><tr><td align="center">系统全面</td><td align="left"></td></tr><tr><td align="center">进阶</td><td align="left"></td></tr></tbody></table><br><br><br>]]></content>
+    <content type="html"><![CDATA[<br><h1 id="Route"><a href="#Route" class="headerlink" title="Route"></a>Route</h1><ul><li>RocketMQ MQ</li><li>JVM Java</li><li>MySQL</li><li>other：git maven linux mongodb</li></ul><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">熟悉JVM内存结构，垃圾回收算法等核心知识<br>熟悉JVM调优实践<br>应对高阶JVM面试题（包括笔试题、面试概述题、以及JVM实践和调优）</td></tr><tr><td align="center">入门</td><td align="left">尚硅谷宋红康JVM全套教程（详解java虚拟机）<br>深入拆解 Java 虚拟机<br/>从 0 开始带你成为JVM高手<br>深入浅出 Java 虚拟机_LG<br></td></tr><tr><td align="center">系统全面&#x2F;进阶</td><td align="left">《深入理解Java虚拟机（第3版）》<br>构建JVM知识体系 解决Java工程师必会的工作&#x2F;面试难点<br>JVM与GC调优_大厂学苑<br>深入JVM内核—原理、诊断与优化<br></td></tr><tr><td align="center">进阶&#x2F;面试</td><td align="left">JVM七大核心系统精讲 从基础理论到高级应用<br></td></tr><tr><td align="center">待定</td><td align="left">马士兵jvm、龙果学院 叶子猿 深入理解Java虚拟机、深入理解和实践JVM、反射和内省技术_腾讯课堂、一次性精通JVM JAVA虚拟机</td></tr></tbody></table><br><br><br><h1 id="DataBase"><a href="#DataBase" class="headerlink" title="DataBase"></a>DataBase</h1><h2 id="MySQL（软件开发-使用方向）"><a href="#MySQL（软件开发-使用方向）" class="headerlink" title="MySQL（软件开发&#x2F;使用方向）"></a>MySQL（软件开发&#x2F;使用方向）</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th><th>remark</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">精通MySQL，成为数据库架构师</td><td></td></tr><tr><td align="center">入门</td><td align="left">零基础入门 详解企业主流数据库MySQL8.0<br>MySQL、Redis、MongoDB 数据库一课通【没有资源】<br>《MySQL是怎样使用的 快速入门MySQL》<br>MySQL 必知必会（geek）<br>《MySQL必知必会》<br></td><td></td></tr><tr><td align="center">实战</td><td align="left">阿里新零售数据库设计与实战 （升级版）<br>高并发 高性能 高可用 MySQL 实战<br></td><td></td></tr><tr><td align="center">系统全面</td><td align="left">6大数据库，挖掘7种Java业务下的分布式存储更优解<br/>《MySQL是怎样运行的 : 从根儿上理解 MySQL》</td><td></td></tr><tr><td align="center">进阶</td><td align="left">MySQL提升课程 全面讲解MySQL架构设计<br/>技术大牛成长课,从0到1带你手写一个数据库系统<br/>MySQL面试指南 中高级开发者的晋升加薪利器<br/>MySQL 实战 45 讲<br>《高性能MySQL（第4版）》</td><td></td></tr></tbody></table><ul><li>路线：先掌握最基础的mysql知识，然后学习mysql的架构设计，内部设计，然后学习实战课程</li><li>学习资料：<ul><li>MySQL 必知必会（geek）、零基础入门 详解企业主流数据库MySQL8.0</li><li>MySQL提升课程 全面讲解MySQL架构设计</li><li>高并发 高性能 高可用 MySQL 实战</li><li>再来一个其它非主流平台的mysql课程：MySQL精讲训练营、7天实战集训营-带你锤碎MySQL</li></ul></li></ul><br><br><h2 id="MySQL（运维-架构-DBA方向）"><a href="#MySQL（运维-架构-DBA方向）" class="headerlink" title="MySQL（运维&#x2F;架构&#x2F;DBA方向）"></a>MySQL（运维&#x2F;架构&#x2F;DBA方向）</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left"></td></tr><tr><td align="center">系统全面</td><td align="left">DBA数据库工程师（imooc）【没有资源】<br/></td></tr><tr><td align="center">进阶</td><td align="left"></td></tr></tbody></table><br><br><h2 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">熟练、实践。技能可以写在简历上</td></tr><tr><td align="center">入门</td><td align="left">【编程不良人】MongoDB最新实战教程<br></td></tr><tr><td align="center">系统全面</td><td align="left">玩转MongoDB4.0(最新版) 从入门到实践</td></tr><tr><td align="center">进阶</td><td align="left">MongoDB 高手课</td></tr></tbody></table><br><br><br><h1 id="MQ"><a href="#MQ" class="headerlink" title="MQ"></a>MQ</h1><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left">从零开始带你成为消息中间件实战高手<br>深入拆解消息队列 47 讲<br/>消息队列高手课</td></tr><tr><td align="center">系统全面</td><td align="left">深入拆解消息队列 47 讲<br/>消息队列高手课</td></tr><tr><td align="center">进阶</td><td align="left"></td></tr></tbody></table><br><br><h2 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left">JAVA-ACE-架构师系列视频课程- RocketMQ（上）（下）<br>RocketMQ核心技术精讲与高并发抗压实战</td></tr><tr><td align="center">系统全面</td><td align="left">RocketMQ官方文档</td></tr><tr><td align="center">进阶</td><td align="left"></td></tr><tr><td align="center">待定</td><td align="left">价值198元新版本RocketMQ4.X教程消息队列</td></tr></tbody></table><br><br><br><h1 id="Development-Tools"><a href="#Development-Tools" class="headerlink" title="Development Tools"></a>Development Tools</h1><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left">熟悉常用操作，了解基本原理，了解常见问题解决方式<br>熟悉作为技术领导需要掌握的Git团队协作技能</td></tr><tr><td align="center">入门</td><td align="left">玩转 Git 三剑客</td></tr><tr><td align="center">系统全面</td><td align="left"><a class="link"   href="https://git-scm.com/book/zh/v2" >Git 官方文档<i class="fas fa-external-link-alt"></i></a></td></tr><tr><td align="center">进阶</td><td align="left">《Git权威指南》</td></tr></tbody></table><br><br><br><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><br><br><br><h1 id="template"><a href="#template" class="headerlink" title="template"></a>template</h1><table><thead><tr><th align="center">explain</th><th align="left">content</th></tr></thead><tbody><tr><td align="center">学习目标</td><td align="left"></td></tr><tr><td align="center">入门</td><td align="left"></td></tr><tr><td align="center">系统全面</td><td align="left"></td></tr><tr><td align="center">进阶</td><td align="left"></td></tr></tbody></table><br><br><br>]]></content>
     
     
       
       
     <summary type="html">&lt;br&gt;
 
-&lt;h1 id=&quot;Java&quot;&gt;&lt;a href=&quot;#Java&quot; class=&quot;headerlink&quot; title=&quot;Java&quot;&gt;&lt;/a&gt;Java&lt;/h1&gt;&lt;h2 id=&quot;JVM&quot;&gt;&lt;a href=&quot;#JVM&quot; class=&quot;headerlink&quot; title=&quot;JVM&quot;&gt;</summary>
+&lt;h1 id=&quot;Route&quot;&gt;&lt;a href=&quot;#Route&quot; class=&quot;headerlink&quot; title=&quot;Route&quot;&gt;&lt;/a&gt;Route&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;RocketMQ MQ&lt;/li&gt;
+&lt;li&gt;JVM Java&lt;/li&gt;
+&lt;li&gt;MySQL&lt;/</summary>
       
     
     

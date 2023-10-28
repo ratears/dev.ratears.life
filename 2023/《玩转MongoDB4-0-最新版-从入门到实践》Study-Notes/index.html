@@ -197,12 +197,19 @@
         <div class="article-content-container border-box">
 
             
-
-            <div class="article-content-bottom border-box">
-                
-                    <div class="article-title">
+                <div class="article-content-top border-box"
+                     style="height: 250px"
+                >
+                    <div class="cover-article-title">
                         《玩转MongoDB4.0(最新版) 从入门到实践》Study Notes
                     </div>
+                    <img class="post-cover" src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.7jlotajrxb80.webp"
+                         onerror="this.style.display='none'"
+                    >
+                </div>
+            
+
+            <div class="article-content-bottom border-box has-cover">
                 
 
                 
@@ -241,14 +248,51 @@
         
 
         
-
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                            <li class="category-item">
+                                
+                                <a href="/dev.ratears.life/categories/DataBase/">DataBase</a>
+                            </li>
+                        
+                    
+                            <li class="category-item">
+                                
+                                    <span class="category-separator"><i class="icon fas fa-angle-right"></i></span>
+                                
+                                <a href="/dev.ratears.life/categories/DataBase/MongoDB/">MongoDB</a>
+                            </li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/MongoDB/">MongoDB</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/DataBase/">DataBase</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item article-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>778 Words</span>
+            </span>
         
         
             <span class="meta-info-item article-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>3 Mins</span>
             </span>
         
         
@@ -269,7 +313,84 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    
+                    <br>
+
+<h1 id="第1章-课程导学"><a href="#第1章-课程导学" class="headerlink" title="第1章 课程导学"></a>第1章 课程导学</h1><h2 id="为什么选择MongoDB"><a href="#为什么选择MongoDB" class="headerlink" title="为什么选择MongoDB"></a>为什么选择MongoDB</h2><ul>
+<li>灵活性</li>
+<li>可扩展性</li>
+<li>强大的查询语言</li>
+<li>优异性能</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="课程介绍"><a href="#课程介绍" class="headerlink" title="课程介绍"></a>课程介绍</h2><ul>
+<li>零基础：基本操作，快速入门</li>
+<li>新手进阶：原理讲解，高阶特性</li>
+<li>运维支持：日常维护，故障诊断</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="学习收获"><a href="#学习收获" class="headerlink" title="学习收获"></a>学习收获</h2><ul>
+<li>快速入门MongoDB基本操作</li>
+<li>独立搭建支持MongoDB的web服务</li>
+<li>为进一步提高学习打下牢固基础</li>
+<li>掌握常用的数据库管理工具</li>
+<li>覆盖70%官方认证核心知识点</li>
+</ul>
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第2章-程序媛姐姐带你初识MongoDB"><a href="#第2章-程序媛姐姐带你初识MongoDB" class="headerlink" title="第2章 程序媛姐姐带你初识MongoDB"></a>第2章 程序媛姐姐带你初识MongoDB</h1><h2 id="MongoDB是什么"><a href="#MongoDB是什么" class="headerlink" title="MongoDB是什么"></a>MongoDB是什么</h2><ul>
+<li>MongoDB：文档存储</li>
+<li>Redis：键值存储</li>
+<li>Cassandra：列存储</li>
+<li>Objectivity&#x2F;DB：对象存储</li>
+<li>Neo4j：图形存储</li>
+</ul>
+<br>
+
+<br>
+
+<br>
+
+<h1 id="第3章-MongoDB基本操作之CRUD"><a href="#第3章-MongoDB基本操作之CRUD" class="headerlink" title="第3章 MongoDB基本操作之CRUD"></a>第3章 MongoDB基本操作之CRUD</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ul>
+<li>存储在MongoDB中的每一篇文档都有一个专属id：文档主键id</li>
+<li>文档主键id全局唯一</li>
+<li>MongoDB支持所有数据类型（数组除外）</li>
+<li>复合主键</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="对象主键ObjectId"><a href="#对象主键ObjectId" class="headerlink" title="对象主键ObjectId"></a>对象主键ObjectId</h2><ul>
+<li>默认的文档主键</li>
+<li>可以快速生成12字节id</li>
+<li>包含创建时间</li>
+</ul>
+<br>
+
+<br>
+
+<h2 id="创建文档"><a href="#创建文档" class="headerlink" title="创建文档"></a>创建文档</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">db.<span class="property">collection</span>.<span class="title function_">insert</span>()</span><br><span class="line">db.<span class="property">collection</span>.<span class="title function_">insert</span>()</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>使用mongo shell创建文档</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** 使用test数据库 */</span></span><br><span class="line">use test</span><br><span class="line"></span><br><span class="line"><span class="comment">/** 查看test数据库中的集合 */</span></span><br><span class="line">show collections</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment">db.&lt;collection&gt;.insertOne 会自动创建集合</span></span><br><span class="line"><span class="comment">&lt;collection&gt;表示文档将要写入的集合</span></span><br><span class="line"><span class="comment">&lt;document&gt; 表示要写入的文档本身</span></span><br><span class="line"><span class="comment">这里的writeConcern文档定义了本次文档创建操作的安全写级别；</span></span><br><span class="line"><span class="comment">简单来说，安全写级别用来判断一次数据库写入操作是否成功安全写级别越高，丢失数据的风险就越低，</span></span><br><span class="line"><span class="comment">然而写入操作的延迟也可能更高。如果不提供writeConcern文档，mongoDB使用默认的安全写级别</span></span><br><span class="line"><span class="comment">省略 _id 字段则会自动生成_id</span></span><br><span class="line"><span class="comment">*/</span>    </span><br><span class="line">db.&lt;collection&gt;.insertOne(</span><br><span class="line">   &lt;document&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">      writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br><span class="line">    </span><br><span class="line">db.col.insert(&#123;title: <span class="string">&#x27;MongoDB 教程&#x27;</span>, </span><br><span class="line">    description: <span class="string">&#x27;MongoDB 是一个 Nosql 数据库&#x27;</span>,</span><br><span class="line">    by: <span class="string">&#x27;菜鸟教程&#x27;</span>,</span><br><span class="line">    url: <span class="string">&#x27;http://www.runoob.com&#x27;</span>,</span><br><span class="line">    tags: [<span class="string">&#x27;mongodb&#x27;</span>, <span class="string">&#x27;database&#x27;</span>, <span class="string">&#x27;NoSQL&#x27;</span>],</span><br><span class="line">    likes: <span class="number">100</span></span><br><span class="line">&#125;)</span><br><span class="line">&#123; acknowledged: <span class="literal">true</span>, insertedId: <span class="string">&#x27;aacount1&#x27;</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">由于我们在db.collection.insertone()命令中并没有提供writeConcern文档，这里显示的是mongoDB默认的安全写级别启用状态</span></span><br><span class="line"><span class="comment">&quot;insertedd 显示了被写入的文档的 id&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment">db.collection.insertMany() 用于向集合插入一个多个文档，语法格式如下：将多个需要创建的文档作为一个数组传入 db,collection.insertMany()</span></span><br><span class="line"><span class="comment">ordered：指定是否按顺序写入，默认 true，按顺序写入;</span></span><br><span class="line"><span class="comment">如果将ordered参数设置为 false，mongoDB可以打乱文档写入的顺序，以便优化写入操作的性能;</span></span><br><span class="line"><span class="comment">在顺序写入时，一旦遇到错误，操作便会退出，剩余的文档无论正确与否，都不会被写入</span></span><br><span class="line"><span class="comment">在乱序写入时，即时某些文档造成了错误，剩余的正确文档仍然会被写入所以第二篇文档会被正常写入数据库</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">db.collection.insertMany(</span><br><span class="line">   [ &lt;document <span class="number">1</span>&gt; , &lt;document <span class="number">2</span>&gt;, ... ],</span><br><span class="line">   &#123;</span><br><span class="line">      writeConcern: &lt;document&gt;,</span><br><span class="line">      ordered: &lt;<span class="type">boolean</span>&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br><span class="line">    </span><br><span class="line"><span class="comment">/** 创建单个或多个文档 */</span>    </span><br><span class="line">db.collection.insert()</span><br></pre></td></tr></table></figure>
+
+
+
+
                 </div>
 
                 
@@ -328,6 +449,18 @@
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
                         
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/MongoDB/">MongoDB</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/DataBase/">DataBase</a>
+                                    </li>
+                                
+                            </ul>
+                        
                     </div>
                     <div>
                         
@@ -361,6 +494,22 @@
 
                 
                     <div class="article-nav">
+                        
+                            <div class="article-prev">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/dev.ratears.life/2023/%E3%80%8A%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8-%E8%AF%A6%E8%A7%A3%E4%BC%81%E4%B8%9A%E4%B8%BB%E6%B5%81%E6%95%B0%E6%8D%AE%E5%BA%93MySQL8-0%E3%80%8BStudy-Notes/"
+                                   title="《零基础入门 详解企业主流数据库MySQL8.0》Study Notes"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                      <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                            <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">《零基础入门 详解企业主流数据库MySQL8.0》Study Notes</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
                         
                         
                             <div class="article-next">
@@ -398,7 +547,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E8%AF%BE%E7%A8%8B%E5%AF%BC%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">第1章 课程导学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9MongoDB"><span class="nav-number">1.1.</span> <span class="nav-text">为什么选择MongoDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">课程介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E6%94%B6%E8%8E%B7"><span class="nav-number">1.3.</span> <span class="nav-text">学习收获</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E5%AA%9B%E5%A7%90%E5%A7%90%E5%B8%A6%E4%BD%A0%E5%88%9D%E8%AF%86MongoDB"><span class="nav-number">2.</span> <span class="nav-text">第2章 程序媛姐姐带你初识MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">2.1.</span> <span class="nav-text">MongoDB是什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0-MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B9%8BCRUD"><span class="nav-number">3.</span> <span class="nav-text">第3章 MongoDB基本操作之CRUD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">3.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E4%B8%BB%E9%94%AEObjectId"><span class="nav-number">3.2.</span> <span class="nav-text">对象主键ObjectId</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E6%A1%A3"><span class="nav-number">3.3.</span> <span class="nav-text">创建文档</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -450,7 +599,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">27.2k</span>
+                    <span class="item-value border-box word">28k</span>
                 </span>
             
 
@@ -593,7 +742,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E8%AF%BE%E7%A8%8B%E5%AF%BC%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">第1章 课程导学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9MongoDB"><span class="nav-number">1.1.</span> <span class="nav-text">为什么选择MongoDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">课程介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E6%94%B6%E8%8E%B7"><span class="nav-number">1.3.</span> <span class="nav-text">学习收获</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E5%AA%9B%E5%A7%90%E5%A7%90%E5%B8%A6%E4%BD%A0%E5%88%9D%E8%AF%86MongoDB"><span class="nav-number">2.</span> <span class="nav-text">第2章 程序媛姐姐带你初识MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">2.1.</span> <span class="nav-text">MongoDB是什么</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0-MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B9%8BCRUD"><span class="nav-number">3.</span> <span class="nav-text">第3章 MongoDB基本操作之CRUD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">3.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E4%B8%BB%E9%94%AEObjectId"><span class="nav-number">3.2.</span> <span class="nav-text">对象主键ObjectId</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E6%A1%A3"><span class="nav-number">3.3.</span> <span class="nav-text">创建文档</span></a></li></ol></li></ol>
     </div>
 </div>
 

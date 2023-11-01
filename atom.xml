@@ -23,9 +23,32 @@
     <published>2023-10-31T17:31:15.962Z</published>
     <updated>2023-10-31T17:31:15.962Z</updated>
     
+    <content type="html"><![CDATA[<br><h1 id="第1章-思想纲领"><a href="#第1章-思想纲领" class="headerlink" title="第1章 思想纲领"></a>第1章 思想纲领</h1><br><br><br><h1 id="第2章-树立清晰的RabbitMQ初印象"><a href="#第2章-树立清晰的RabbitMQ初印象" class="headerlink" title="第2章 树立清晰的RabbitMQ初印象"></a>第2章 树立清晰的RabbitMQ初印象</h1><br><br><br><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><br><br><br><h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><blockquote></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;br&gt;
+
+&lt;h1 id=&quot;第1章-思想纲领&quot;&gt;&lt;a href=&quot;#第1章-思想纲领&quot; class=&quot;headerlink&quot; title=&quot;第1章 思想纲领&quot;&gt;&lt;/a&gt;第1章 思想纲领&lt;/h1&gt;&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;h1 id=&quot;第2章-树立清晰的RabbitMQ</summary>
+      
     
     
     
+    <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/"/>
+    
+    <category term="RabbitMQ" scheme="https://ratears.github.io/dev.ratears.life/categories/MQ/RabbitMQ/"/>
+    
+    
+    <category term="MQ" scheme="https://ratears.github.io/dev.ratears.life/tags/MQ/"/>
+    
+    <category term="RabbitMQ" scheme="https://ratears.github.io/dev.ratears.life/tags/RabbitMQ/"/>
     
   </entry>
   
@@ -55,9 +78,9 @@
     <category term="MySQL" scheme="https://ratears.github.io/dev.ratears.life/categories/DataBase/MySQL/"/>
     
     
-    <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
-    
     <category term="MySQL" scheme="https://ratears.github.io/dev.ratears.life/tags/MySQL/"/>
+    
+    <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
     
   </entry>
   
@@ -85,9 +108,9 @@
     <category term="MongoDB" scheme="https://ratears.github.io/dev.ratears.life/categories/DataBase/MongoDB/"/>
     
     
-    <category term="MongoDB" scheme="https://ratears.github.io/dev.ratears.life/tags/MongoDB/"/>
-    
     <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
+    
+    <category term="MongoDB" scheme="https://ratears.github.io/dev.ratears.life/tags/MongoDB/"/>
     
   </entry>
   

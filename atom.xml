@@ -6,7 +6,7 @@
   <link href="https://ratears.github.io/dev.ratears.life/atom.xml" rel="self"/>
   
   <link href="https://ratears.github.io/dev.ratears.life/"/>
-  <updated>2023-10-31T17:31:15.962Z</updated>
+  <updated>2023-11-04T16:05:29.558Z</updated>
   <id>https://ratears.github.io/dev.ratears.life/</id>
   
   <author>
@@ -17,26 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《Go开发工程师》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AGo%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AGo%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E3%80%8BStudy-Notes/</id>
+    <published>2023-11-04T16:05:29.558Z</published>
+    <updated>2023-11-04T16:05:29.558Z</updated>
+    
+    
+    
+    
+    <category term="Go" scheme="https://ratears.github.io/dev.ratears.life/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://ratears.github.io/dev.ratears.life/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《RabbitMQ精讲，提升工程实践能力，培养架构思维》Study Notes</title>
     <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ARabbitMQ%E7%B2%BE%E8%AE%B2%EF%BC%8C%E6%8F%90%E5%8D%87%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%9F%B9%E5%85%BB%E6%9E%B6%E6%9E%84%E6%80%9D%E7%BB%B4%E3%80%8BStudy-Notes/"/>
     <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8ARabbitMQ%E7%B2%BE%E8%AE%B2%EF%BC%8C%E6%8F%90%E5%8D%87%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%9F%B9%E5%85%BB%E6%9E%B6%E6%9E%84%E6%80%9D%E7%BB%B4%E3%80%8BStudy-Notes/</id>
     <published>2023-10-31T17:31:15.962Z</published>
     <updated>2023-10-31T17:31:15.962Z</updated>
     
-    <content type="html"><![CDATA[<br><h1 id="第1章-思想纲领"><a href="#第1章-思想纲领" class="headerlink" title="第1章 思想纲领"></a>第1章 思想纲领</h1><br><br><br><h1 id="第2章-树立清晰的RabbitMQ初印象"><a href="#第2章-树立清晰的RabbitMQ初印象" class="headerlink" title="第2章 树立清晰的RabbitMQ初印象"></a>第2章 树立清晰的RabbitMQ初印象</h1><br><br><br><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><br><br><br><h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><blockquote></blockquote>]]></content>
+    <content type="html"><![CDATA[<br><h1 id="第1章-思想纲领"><a href="#第1章-思想纲领" class="headerlink" title="第1章 思想纲领"></a>第1章 思想纲领</h1><h2 id="学习RabbitMQ的必要性"><a href="#学习RabbitMQ的必要性" class="headerlink" title="学习RabbitMQ的必要性"></a>学习RabbitMQ的必要性</h2><ul><li>工作中: RabbitMQ的使用越来越复杂</li><li>面试中:深入考察原理、源码、调优</li><li>基本功: “消息化”使得编码风格和思想变化</li></ul><br><br><h2 id="学习RabbitMQ的难点"><a href="#学习RabbitMQ的难点" class="headerlink" title="学习RabbitMQ的难点"></a>学习RabbitMQ的难点</h2><ul><li>难在，把知识应用在实际工作中<ul><li>满足基本要求：使用Exchange完成微服务项目</li><li>工作能力进阶：完善消息可靠性</li><li>团队顶梁柱：集群高可用</li><li>打造核心竞争力：分布式事务改造</li></ul></li><li>难在，RabbitMQ知识纵向的深度认知<ul><li>了解：三种Exchange使用，命令行使用</li><li>掌握：使用基本方式快速完成项目，RabbitMQ单节点部署与配置</li><li>熟练：SpringBoot深度整合RabbitMQ，RabbitMQ高可用集群部署</li><li>精通：手写RabbitMQ分布式事务框架，精通SpringAMQP源码</li></ul></li><li>难在，枯燥零散学不下去<ul><li>实用:在项目中学，即学即用</li><li>深入:基于RabbitMQ开发分布式事务框架</li><li>平滑:不断分析项目目前不足，推动学习</li><li>浅出:从生活中的例子认识消息中间件</li></ul></li></ul><br><br><h2 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h2><ul><li>基于同一个项目，多次迭代</li><li>以RabbitMQ为核心，讲深讲透</li><li>“扶上马，送一程”，提升工程思维与架构水平</li></ul><br><br><br><h1 id="第2章-树立清晰的RabbitMQ初印象"><a href="#第2章-树立清晰的RabbitMQ初印象" class="headerlink" title="第2章 树立清晰的RabbitMQ初印象"></a>第2章 树立清晰的RabbitMQ初印象</h1><h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><ul><li>中间件(Middleware)是提供软件和软件之间连接的软件，以便于软件各部件之间的沟通</li></ul><br><br><h2 id="同步直接调用的问题"><a href="#同步直接调用的问题" class="headerlink" title="同步直接调用的问题"></a>同步直接调用的问题</h2><ul><li>业务调用链过长，用户等待时间长</li><li>部分组件故障会瘫痪整个业务</li><li>业务高峰期没有缓冲</li></ul><br><br><h2 id="多线程异步直接调用的问题"><a href="#多线程异步直接调用的问题" class="headerlink" title="多线程异步直接调用的问题"></a>多线程异步直接调用的问题</h2><ul><li>可以部分解决同步直接调用的问题</li><li>业务高峰期时产生大量的异步线程，造成线程池不够用或者内存爆满</li></ul><br><br><h2 id="使用消息中间件的优势"><a href="#使用消息中间件的优势" class="headerlink" title="使用消息中间件的优势"></a>使用消息中间件的优势</h2><ul><li>业务调用链短，用户等待时间短</li><li>部分组件故障不会瘫痪整个业务</li><li>业务高峰期有缓冲</li><li>业务高峰期时不会产生大量的异步线程</li></ul><br><br><h2 id="使用消息中间件的作用"><a href="#使用消息中间件的作用" class="headerlink" title="使用消息中间件的作用"></a>使用消息中间件的作用</h2><ul><li>异步处理</li><li>系统解耦</li><li>流量削峰和流控</li><li>消息广播</li><li>消息收集</li><li>最终一致性</li></ul><br><br><h2 id="主流消息中间件技术"><a href="#主流消息中间件技术" class="headerlink" title="主流消息中间件技术"></a>主流消息中间件技术</h2><h3 id="ACTIVEMQ"><a href="#ACTIVEMQ" class="headerlink" title="ACTIVEMQ"></a>ACTIVEMQ</h3><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.304ar9g68h40.webp" width="60%"/><ul><li>由Apache 出品，Java开发，支持JMS1.1协议和J2EE 1.4规范。</li><li>支持广泛的连接协议:OpenWire&#x2F;STOMP&#x2F;REST&#x2F;XMPP&#x2F;AMQP</li><li>支持多种语音客户端，支持插件</li><li>管理方便，便于配置集群代理</li></ul><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul><li>基于JAVA，跨平台运行</li><li>可以用JDBC连接多种数据库</li><li>有完善的界面、监控、安全机制</li><li>自动重连和错误重试</li></ul><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ul><li>社区活跃度不及 RabbitMQ</li><li>目前重心放到6.0产品Apollo，对5的Bug维护较少</li><li>不适合用于上千个队列的应用场景</li></ul><h3 id="RabbitMQ"><a href="#RabbitMQ" class="headerlink" title="RabbitMQ"></a>RabbitMQ</h3><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.kcakesdekpc.webp" width="60%" /><ul><li>当前最主流的消息中间件</li><li>高可靠性，支持发送确认，投递确认等特性</li><li>高可用，支持镜像队列</li><li>支持插件</li></ul><h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h4><ul><li>基于Erlang，支持高并发</li><li>支持多种平台，多种客户端，文档齐全</li><li>可靠性高</li><li>在互联网公司有较大规模的应用，社区活跃度高</li></ul><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h4><ul><li>Erlang语言较为小众，不利于二次开发</li><li>代理架构下，中央节点增加了延迟，影响性能</li><li>使用AMQP协议，使用起来有学习成本</li></ul><h3 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h3><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.3j1kkcn9onu0.webp" width="100%" /><h4 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a>优点</h4><ul><li>基于Java，方便二次开发</li><li>单机支持1万以上持久化队列</li><li>内存与磁盘都有一份数据，保证性能+高可用</li><li>开发度较活跃，版本更新很快</li></ul><h4 id="缺点-2"><a href="#缺点-2" class="headerlink" title="缺点"></a>缺点</h4><ul><li>客户端种类不多，较成熟的是 Java 及 C++</li><li>没有 Web 管理界面，提供了一个 CLI(命令行界面)</li><li>社区关注度及成熟度不如RabbitMQ</li></ul><h3 id="Kafka"><a href="#Kafka" class="headerlink" title="Kafka"></a>Kafka</h3><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.4qcjv6in9dw0.webp" width="60%" /><ul><li>Linkedin开发的分布式的日志提交系统</li><li>独特的分区特性，适用于大数据系统</li><li>性能高效、可扩展良好</li><li>可复制、可容错</li></ul><h4 id="优点-3"><a href="#优点-3" class="headerlink" title="优点"></a>优点</h4><ul><li>原生的分布式系统</li><li>零拷贝技术，减少10 操作步骤，提高系统吞吐量</li><li>快速持久化:可以在 O(1)的系统开销下进行消息持久化</li><li>支持数据批量发送和拉取</li></ul><h4 id="缺点-3"><a href="#缺点-3" class="headerlink" title="缺点"></a>缺点</h4><ul><li>单机超过 64 个队列&#x2F;分区时，性能明显劣化</li><li>使用短轮询方式，实时性取决于轮询间隔时间</li><li>消费失败不支持重试</li><li>可靠性比较差</li></ul><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul><li>ActiveMQ最“老”，老牌，但维护较慢</li><li>RabbitMQ最“火”，适合大小公司，各种场景通杀</li><li>RocketMQ最“猛”’，功能强，但考验公司运维能力</li><li>Kafka最“强”，支持超大量数据，但消息可靠性弱</li></ul><br><br><h2 id="RabbitMO高性能的原因"><a href="#RabbitMO高性能的原因" class="headerlink" title="RabbitMO高性能的原因"></a>RabbitMO高性能的原因</h2><ul><li>ERLANG语言：<ul><li>由爱立信公司开发 (Ericsson Language)，一门为交换机软件开发诞生的编程语言</li><li>通用的面向并发的编程语言，适用于分布式系统</li><li>基于虚拟机解释运行，跨平台部署</li><li>进程间上下文切换效率远高于C语言</li><li>有着和原生Socket一样的延迟</li></ul></li></ul><br><br><h2 id="AMQP协议介绍"><a href="#AMQP协议介绍" class="headerlink" title="AMQP协议介绍"></a>AMQP协议介绍</h2><ul><li>AMQP协议作为RabbitMQ的规范，规定了RabbitMQ对外接口</li><li>学会了AMQP协议的使用，就基本掌握了RabbitMQ的使用</li><li>学会了AMQP协议的概念，就基本掌握了RabbitMQ的核心概念</li></ul><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.21tk60qjyh7k.webp" width="80%"/><ul><li>Broker: 接收和分发消息的应用，RabbitMQ 就是MessageBroker</li><li>Virtual Host: 虚拟Broker，将多个单元隔离开</li><li>Connection: publisher &#x2F; consumer和broker之间的TCP连接</li><li>Routing Key:路由键，用来指示消息的路由转发，相当于快递的地址</li><li>Exchange:交换机，相当于快递的分拨中心</li><li>Queue:消息队列，消息最终被送到这里等待consumer取走</li><li>Binding:exchange和queue之间的虚拟连接，用于message的分发依据</li></ul><br><br><h2 id="AMQP协议的核心概念-Exchange"><a href="#AMQP协议的核心概念-Exchange" class="headerlink" title="AMQP协议的核心概念-Exchange"></a>AMQP协议的核心概念-Exchange</h2><ul><li>在AMQP协议或者是RabbitMQ实现中，最核心的组件是Exchange</li><li>Exchange承担RabbitMQ的核心功能 路由转发</li><li>Exchange有多个种类，配置多变，需要详细讲解</li></ul><br><br><h2 id="Exchange的作用"><a href="#Exchange的作用" class="headerlink" title="Exchange的作用"></a>Exchange的作用</h2><ul><li>Exchange是AMQP协议和RabbitMQ的核心组件</li><li>Exchange的功能是根据绑定关系和路由键为消息提供路由，将消息转发至相应的队列</li><li>Exchange有4种类型: Direct &#x2F; Topic &#x2F; Fanout &#x2F; Headers，其中Headers使用很少，以前三种为主</li></ul><br><br><h2 id="Direct-Exchange"><a href="#Direct-Exchange" class="headerlink" title="Direct Exchange"></a>Direct Exchange</h2><ul><li>Message中的Routing Key如果和Binding Key一致，Direct Exchange则将message发到对应的queue中</li></ul><br><br><h2 id="Fanout-Exchange"><a href="#Fanout-Exchange" class="headerlink" title="Fanout Exchange"></a>Fanout Exchange</h2><ul><li>每个发到Fanout Exchange的message都会分发到所有绑定的queue上去</li></ul><br><br><h2 id="Topit-Exchange"><a href="#Topit-Exchange" class="headerlink" title="Topit Exchange"></a>Topit Exchange</h2><ul><li>根据Routing Key及通配规则，Topic Exchange将消息分发到目标Queue中</li><li>全配:与Direct类似</li><li>Binding Key中的#:匹配任意个数的word</li><li>Binding Key中的*匹配任意1个word</li></ul><br><br><h2 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h2><ul><li>AMQP协议直接决定了RabbitMQ的内部结构和外部行头</li><li>对于发送者来说，将消息发给特定的Exchange</li><li>消息经过Exchange路由后，到达具体队列</li><li>消费者将消息从监听的队列中取走</li><li>Exchange主要有3种类型: Direct &#x2F; Topic &#x2F; Fanout<ul><li>Direct (直接路由): Routing Key &#x3D; Binding Key，容易配置和使用</li><li>Fanout (广播路由):群发绑定的所有队列，适用于消息广播</li><li>Topic (话题路由):功能较为复，但能降级为Direct，建议优先使用，为以后拓展留余地</li></ul></li></ul><br><br><br><br><br><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><br><br><br><h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><blockquote><ol><li>作业：推荐 draw.io 绘图网站，绘制amqp协议结构图</li><li>在tryrabbitmq.com 网站中，搭建三种Exchange模型</li></ol></blockquote>]]></content>
     
     
       
       
     <summary type="html">&lt;br&gt;
 
-&lt;h1 id=&quot;第1章-思想纲领&quot;&gt;&lt;a href=&quot;#第1章-思想纲领&quot; class=&quot;headerlink&quot; title=&quot;第1章 思想纲领&quot;&gt;&lt;/a&gt;第1章 思想纲领&lt;/h1&gt;&lt;br&gt;
-
-&lt;br&gt;
-
-&lt;br&gt;
-
-&lt;h1 id=&quot;第2章-树立清晰的RabbitMQ</summary>
+&lt;h1 id=&quot;第1章-思想纲领&quot;&gt;&lt;a href=&quot;#第1章-思想纲领&quot; class=&quot;headerlink&quot; title=&quot;第1章 思想纲领&quot;&gt;&lt;/a&gt;第1章 思想纲领&lt;/h1&gt;&lt;h2 id=&quot;学习RabbitMQ的必要性&quot;&gt;&lt;a href=&quot;#学习RabbitM</summary>
       
     
     
@@ -78,9 +89,9 @@
     <category term="MySQL" scheme="https://ratears.github.io/dev.ratears.life/categories/DataBase/MySQL/"/>
     
     
-    <category term="MySQL" scheme="https://ratears.github.io/dev.ratears.life/tags/MySQL/"/>
-    
     <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
+    
+    <category term="MySQL" scheme="https://ratears.github.io/dev.ratears.life/tags/MySQL/"/>
     
   </entry>
   
@@ -108,9 +119,9 @@
     <category term="MongoDB" scheme="https://ratears.github.io/dev.ratears.life/categories/DataBase/MongoDB/"/>
     
     
-    <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
-    
     <category term="MongoDB" scheme="https://ratears.github.io/dev.ratears.life/tags/MongoDB/"/>
+    
+    <category term="DataBase" scheme="https://ratears.github.io/dev.ratears.life/tags/DataBase/"/>
     
   </entry>
   

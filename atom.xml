@@ -6,7 +6,7 @@
   <link href="https://ratears.github.io/dev.ratears.life/atom.xml" rel="self"/>
   
   <link href="https://ratears.github.io/dev.ratears.life/"/>
-  <updated>2023-11-11T21:04:26.074Z</updated>
+  <updated>2023-11-16T17:28:59.127Z</updated>
   <id>https://ratears.github.io/dev.ratears.life/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《知数堂MySQL实战》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E7%9F%A5%E6%95%B0%E5%A0%82MySQL%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E7%9F%A5%E6%95%B0%E5%A0%82MySQL%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/</id>
+    <published>2023-11-16T17:28:59.127Z</published>
+    <updated>2023-11-16T17:28:59.127Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《透视 HTTP 协议》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E9%80%8F%E8%A7%86-HTTP-%E5%8D%8F%E8%AE%AE%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8A%E9%80%8F%E8%A7%86-HTTP-%E5%8D%8F%E8%AE%AE%E3%80%8BStudy-Notes/</id>
+    <published>2023-11-12T13:09:25.129Z</published>
+    <updated>2023-11-12T13:09:25.129Z</updated>
+    
+    
+    
+    
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/categories/Network/"/>
+    
+    <category term="HTTP" scheme="https://ratears.github.io/dev.ratears.life/categories/Network/HTTP/"/>
+    
+    
+    <category term="HTTP" scheme="https://ratears.github.io/dev.ratears.life/tags/HTTP/"/>
+    
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/tags/Network/"/>
+    
+  </entry>
   
   <entry>
     <title>《玩转数据结构》Study Notes</title>

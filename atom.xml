@@ -6,7 +6,7 @@
   <link href="https://ratears.github.io/dev.ratears.life/atom.xml" rel="self"/>
   
   <link href="https://ratears.github.io/dev.ratears.life/"/>
-  <updated>2023-11-23T17:18:27.590Z</updated>
+  <updated>2023-11-23T18:22:17.906Z</updated>
   <id>https://ratears.github.io/dev.ratears.life/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《Web 协议详解与抓包实战》Study Notes</title>
+    <link href="https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AWeb-%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%E4%B8%8E%E6%8A%93%E5%8C%85%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/"/>
+    <id>https://ratears.github.io/dev.ratears.life/2023/%E3%80%8AWeb-%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%E4%B8%8E%E6%8A%93%E5%8C%85%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/</id>
+    <published>2023-11-23T18:22:17.906Z</published>
+    <updated>2023-11-23T18:22:17.906Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>《大话HTTP协议》Study Notes</title>
@@ -26,6 +39,14 @@
     
     
     
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/categories/Network/"/>
+    
+    <category term="HTTP" scheme="https://ratears.github.io/dev.ratears.life/categories/Network/HTTP/"/>
+    
+    
+    <category term="HTTP" scheme="https://ratears.github.io/dev.ratears.life/tags/HTTP/"/>
+    
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/tags/Network/"/>
     
   </entry>
   
@@ -553,23 +574,6 @@
       
     <summary type="html">&lt;h1 id=&quot;Hexo常用命令&quot;&gt;&lt;a href=&quot;#Hexo常用命令&quot; class=&quot;headerlink&quot; title=&quot;Hexo常用命令&quot;&gt;&lt;/a&gt;Hexo常用命令&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://ratears.github.io/dev.ratears.life/2023/hello-world/"/>
-    <id>https://ratears.github.io/dev.ratears.life/2023/hello-world/</id>
-    <published>2023-09-24T19:25:44.023Z</published>
-    <updated>2023-09-24T19:25:44.023Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/&quot; &gt;Hexo&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;! This is your very first post. Check &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/docs/&quot; &gt;documentation&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/docs/troubleshooting.html&quot; &gt;troubleshooting&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt; or you can ask me on &lt;a class=&quot;link&quot;   href=&quot;https://github.com/hexojs/hexo/issues&quot; &gt;GitHub&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;.&lt;/p&gt;</summary>
     
     
     

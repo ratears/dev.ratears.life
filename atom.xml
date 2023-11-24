@@ -23,9 +23,22 @@
     <published>2023-11-23T18:22:17.906Z</published>
     <updated>2023-11-23T18:22:17.906Z</updated>
     
+    <content type="html"><![CDATA[<br><h1 id="第一章：HTTP1-1协议（38讲）"><a href="#第一章：HTTP1-1协议（38讲）" class="headerlink" title="第一章：HTTP1.1协议（38讲）"></a>第一章：HTTP1.1协议（38讲）</h1><h2 id="浏览器发起-HTTP-请求的典型场景"><a href="#浏览器发起-HTTP-请求的典型场景" class="headerlink" title="浏览器发起 HTTP 请求的典型场景"></a>浏览器发起 HTTP 请求的典型场景</h2><img src="https://cdn.jsdelivr.net/gh/sonzonzy/image-hosting@main/gitee-blog/image.4fdm1gdg9660.webp" width="70%"><br><img src="https://cdn.jsdelivr.net/gh/sonzonzy/image-hosting@main/gitee-blog/image.5ln9wca3rqw0.webp" width="70%"><br><h2 id="Hypertext-Transfer-Protocol-HTTP-协议"><a href="#Hypertext-Transfer-Protocol-HTTP-协议" class="headerlink" title="Hypertext Transfer Protocol (HTTP) 协议"></a>Hypertext Transfer Protocol (HTTP) 协议</h2><ul><li>a stateless application-level request&#x2F;response protocol that uses<br>extensible semantics and self-descriptive message payloads for flexible<br>interaction with network-based hypertext information systems<br>（RFC7230 2014.6）</li><li>一种无状态的、应用层的、以请求&#x2F;应答方式运行的协议，它使用可扩展的<br>语义和自描述消息格式，与基于网络的超文本信息系统灵活的互动</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;br&gt;
+
+&lt;h1 id=&quot;第一章：HTTP1-1协议（38讲）&quot;&gt;&lt;a href=&quot;#第一章：HTTP1-1协议（38讲）&quot; class=&quot;headerlink&quot; title=&quot;第一章：HTTP1.1协议（38讲）&quot;&gt;&lt;/a&gt;第一章：HTTP1.1协议（38讲）&lt;/h1&gt;&lt;h2</summary>
+      
     
     
     
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/categories/Network/"/>
+    
+    
+    <category term="Network" scheme="https://ratears.github.io/dev.ratears.life/tags/Network/"/>
     
   </entry>
   

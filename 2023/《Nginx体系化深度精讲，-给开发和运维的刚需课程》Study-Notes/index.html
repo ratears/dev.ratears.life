@@ -9,7 +9,7 @@
     
     <title>
         
-            JAVA-ACE-架构师系列视频课程-RocketMQ（下） |
+            《Nginx体系化深度精讲， 给开发和运维的刚需课程》Study Notes |
         
         Ratears&#39;s Blog
     </title>
@@ -197,19 +197,12 @@
         <div class="article-content-container border-box">
 
             
-                <div class="article-content-top border-box"
-                     style="height: 280px"
-                >
-                    <div class="cover-article-title">
-                        JAVA-ACE-架构师系列视频课程-RocketMQ（下）
-                    </div>
-                    <img class="post-cover" src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.37o988x1bce0.webp"
-                         onerror="this.style.display='none'"
-                    >
-                </div>
-            
 
-            <div class="article-content-bottom border-box has-cover">
+            <div class="article-content-bottom border-box">
+                
+                    <div class="article-title">
+                        《Nginx体系化深度精讲， 给开发和运维的刚需课程》Study Notes
+                    </div>
                 
 
                 
@@ -237,58 +230,21 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-09-28 14:10:12</span>
-                <span class="mobile">2023-09-28 14:10</span>
+                <span class="pc">2023-11-26 01:32:06</span>
+                <span class="mobile">2023-11-26 01:32</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Thu Sep 28 2023 14:10:12 GMT+0800">2023-09-28 14:10:12</span>
+                <span class="pc" data-updated="Sun Nov 26 2023 01:32:06 GMT+0800">2023-11-26 01:32:06</span>
             </span>
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                            <li class="category-item">
-                                
-                                <a href="/dev.ratears.life/categories/MQ/">MQ</a>
-                            </li>
-                        
-                    
-                            <li class="category-item">
-                                
-                                    <span class="category-separator"><i class="icon fas fa-angle-right"></i></span>
-                                
-                                <a href="/dev.ratears.life/categories/MQ/RocketMQ/">RocketMQ</a>
-                            </li>
-                        
-                    
-                </ul>
-            </span>
+
         
 
         
-            <span class="article-tag meta-info-item border-box">
-                <i class="icon fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/MQ/">MQ</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/dev.ratears.life/tags/RocketMQ/">RocketMQ</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-            <span class="meta-info-item article-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>516 Words</span>
-            </span>
         
         
             <span class="meta-info-item article-min2read">
@@ -313,126 +269,7 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <br>
-
-<h1 id="RocketMQ实战项目介绍与设计"><a href="#RocketMQ实战项目介绍与设计" class="headerlink" title="RocketMQ实战项目介绍与设计"></a>RocketMQ实战项目介绍与设计</h1><h2 id="RocketMQ适合的应用场景介绍"><a href="#RocketMQ适合的应用场景介绍" class="headerlink" title="RocketMQ适合的应用场景介绍"></a>RocketMQ适合的应用场景介绍</h2><ul>
-<li>服务解耦</li>
-<li>异步处理</li>
-<li>并行处理</li>
-<li>最终一致</li>
-</ul>
-<br>
-
-<br>
-
-<h2 id="为什么用RocketMQ"><a href="#为什么用RocketMQ" class="headerlink" title="为什么用RocketMQ ?"></a>为什么用RocketMQ ?</h2><ul>
-<li>面向分布式系统的MQ</li>
-<li>无单点的分布式集群化</li>
-<li>数据安全</li>
-<li>海量数据堆积</li>
-<li>毫秒级投递延迟</li>
-</ul>
-<br>
-
-<br>
-
-<h2 id="实战项目介绍"><a href="#实战项目介绍" class="headerlink" title="实战项目介绍"></a>实战项目介绍</h2><blockquote>
-<p>我们模拟一个真实项目案例，进行对RocketMQ的学习，假设我们有N多个订阅关系也就是说我们可能存在多个Topic主题，或者简单说我们的MQ服务器需要支持多个系统的消息收发。</p>
-</blockquote>
-<ul>
-<li><p>模拟电商交易系统的几个流程：</p>
-<ul>
-<li>创建订单-&gt;减库存，库存-&gt;订单</li>
-<li>支付成功-&gt;订单、积分、优惠券、物流等等</li>
-</ul>
-</li>
-<li><p>实战项目：模拟一个电商网站的交易系统</p>
-</li>
-<li><p>任务分析：</p>
-<ul>
-<li>需求分析：在我们所熟悉的网上购物平台中，实现交易的几个主要操作动作<ul>
-<li>挑商品(搜索)</li>
-<li>创建订单<ul>
-<li>选择收货地址</li>
-<li>选择支付方式</li>
-<li>选择优惠券</li>
-<li>提交订单</li>
-</ul>
-</li>
-<li>订单付款</li>
-</ul>
-</li>
-<li>流程设计</li>
-<li>模块划分</li>
-<li>数据库设计</li>
-<li>业务问题</li>
-</ul>
-</li>
-</ul>
-<br>
-
-<br>
-
-<h2 id="项目设计"><a href="#项目设计" class="headerlink" title="项目设计"></a>项目设计</h2><ul>
-<li>提交订单请求，后台需要做哪些典型的事情?</li>
-</ul>
-<p>提交订单——&gt;校验——&gt;使用优惠劵——&gt;扣库存——&gt;创建交易单</p>
-<img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.13raf5am0m68.webp" />
-
-
-
-<ul>
-<li>支付流程</li>
-</ul>
-<img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.1pvnzkcqc37k.webp" />
-
-<br>
-
-<br>
-
-<h2 id="消息可靠投递"><a href="#消息可靠投递" class="headerlink" title="消息可靠投递"></a>消息可靠投递</h2><ul>
-<li>一段伪代码（存在问题）</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doBusiness</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">boolean</span> <span class="variable">result</span> <span class="operator">=</span> service.doSave(model);<span class="comment">//1、如操作数据库失败，抛出异常</span></span><br><span class="line">            <span class="keyword">if</span> (result) &#123;</span><br><span class="line">                sendMessage(model); <span class="comment">//2、如果数据库操作成功，发送消息，如消息发送失败，抛出异常</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            rollback(); <span class="comment">//3、如果发生异常，回滚数据库</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.1oagij78bqyo.webp" />
-
-<blockquote>
-<p>在1.5 ~ 1.8 步 出现问题的时候，事务无法提交或回滚</p>
-</blockquote>
-<ul>
-<li>可靠设计如下：即使MQ发送消息 ~ 返回消息的过程中出现了问题，业务依然正常运行</li>
-</ul>
-<img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.6iy2ordzlow0.webp" />
-
-<br>
-
-<br>
-
-<h2 id="交易系统模块划分"><a href="#交易系统模块划分" class="headerlink" title="交易系统模块划分"></a>交易系统模块划分</h2><img src="https://cdn.statically.io/gh/ratears/images-hosting@picx/picx/image.a7kzcf6envk.webp" />
-
-<br>
-
-<br>
-
-<br>
-
-<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><ul>
-<li>略</li>
-</ul>
-<br>
-
-<br>
-
-<br>
-
-<h1 id="RocketMQ与Spring结合"><a href="#RocketMQ与Spring结合" class="headerlink" title="RocketMQ与Spring结合"></a>RocketMQ与Spring结合</h1><br>
-
-<br>
-
-<br>
-
-<h1 id="数据库模型设计"><a href="#数据库模型设计" class="headerlink" title="数据库模型设计"></a>数据库模型设计</h1>
+                    
                 </div>
 
                 
@@ -440,11 +277,11 @@
     <div class="copyright-info-content border-box">
         <div class="copyright-info-top border-box">
             <div class="post-title border-box text-ellipsis">
-                JAVA-ACE-架构师系列视频课程-RocketMQ（下）
+                《Nginx体系化深度精讲， 给开发和运维的刚需课程》Study Notes
             </div>
 
             <div class="post-link border-box text-ellipsis">
-                2023/JAVA-ACE-架构师系列视频课程-RocketMQ（下）/
+                2023/《Nginx体系化深度精讲，-给开发和运维的刚需课程》Study-Notes/
             </div>
         </div>
 
@@ -460,7 +297,7 @@
                 <div class="type">
                     Published
                 </div>
-                <div class="content">2023-09-28 14:10</div>
+                <div class="content">2023-11-26 01:32</div>
             </div>
 
 
@@ -490,18 +327,6 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
-                        
-                            <ul class="post-tags-box border-box">
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/MQ/">MQ</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/dev.ratears.life/tags/RocketMQ/">RocketMQ</a>
-                                    </li>
-                                
-                            </ul>
                         
                     </div>
                     <div>
@@ -537,31 +362,15 @@
                 
                     <div class="article-nav">
                         
-                            <div class="article-prev">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/dev.ratears.life/2023/%E3%80%8A%E9%AB%98%E7%BA%A7Redis%E8%BF%9B%E9%98%B6%E8%AF%BE-%E8%A7%A3%E5%86%B3Redis%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98-%E6%8E%8C%E6%8F%A1Redis6-x%E7%89%B9%E6%80%A7%E3%80%8BStudy-Notes/"
-                                   title="《高级Redis进阶课 解决Redis实际问题+掌握Redis6.x特性》Study Notes"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                            <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">《高级Redis进阶课 解决Redis实际问题+掌握Redis6.x特性》Study Notes</span>
-                                        <span class="post-nav-item">Prev posts</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="article-next">
                                 <a class="next"
                                    rel="next"
-                                   href="/dev.ratears.life/2023/JAVA-ACE-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%B3%BB%E5%88%97%E8%A7%86%E9%A2%91%E8%AF%BE%E7%A8%8B-RocketMQ%EF%BC%88%E4%B8%8A%EF%BC%89/"
-                                   title="JAVA-ACE-架构师系列视频课程-RocketMQ（上）"
+                                   href="/dev.ratears.life/2023/%E3%80%8AWeb-%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%E4%B8%8E%E6%8A%93%E5%8C%85%E5%AE%9E%E6%88%98%E3%80%8BStudy-Notes/"
+                                   title="《Web 协议详解与抓包实战》Study Notes"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">JAVA-ACE-架构师系列视频课程-RocketMQ（上）</span>
+                                        <span class="post-nav-title-item text-ellipsis">《Web 协议详解与抓包实战》Study Notes</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                             <span class="right arrow-icon flex-center">
@@ -589,7 +398,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RocketMQ%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">RocketMQ实战项目介绍与设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#RocketMQ%E9%80%82%E5%90%88%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.</span> <span class="nav-text">RocketMQ适合的应用场景介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8RocketMQ"><span class="nav-number">1.2.</span> <span class="nav-text">为什么用RocketMQ ?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.3.</span> <span class="nav-text">实战项目介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.4.</span> <span class="nav-text">项目设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%8A%95%E9%80%92"><span class="nav-number">1.5.</span> <span class="nav-text">消息可靠投递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9D%97%E5%88%92%E5%88%86"><span class="nav-number">1.6.</span> <span class="nav-text">交易系统模块划分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RocketMQ%E4%B8%8ESpring%E7%BB%93%E5%90%88"><span class="nav-number">3.</span> <span class="nav-text">RocketMQ与Spring结合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1"><span class="nav-number">4.</span> <span class="nav-text">数据库模型设计</span></a></li></ol>
+        
     </div>
 </div>
 
@@ -784,7 +593,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RocketMQ%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">RocketMQ实战项目介绍与设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#RocketMQ%E9%80%82%E5%90%88%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.</span> <span class="nav-text">RocketMQ适合的应用场景介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8RocketMQ"><span class="nav-number">1.2.</span> <span class="nav-text">为什么用RocketMQ ?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.3.</span> <span class="nav-text">实战项目介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.4.</span> <span class="nav-text">项目设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%8A%95%E9%80%92"><span class="nav-number">1.5.</span> <span class="nav-text">消息可靠投递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9D%97%E5%88%92%E5%88%86"><span class="nav-number">1.6.</span> <span class="nav-text">交易系统模块划分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RocketMQ%E4%B8%8ESpring%E7%BB%93%E5%90%88"><span class="nav-number">3.</span> <span class="nav-text">RocketMQ与Spring结合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1"><span class="nav-number">4.</span> <span class="nav-text">数据库模型设计</span></a></li></ol>
+        
     </div>
 </div>
 
